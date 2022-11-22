@@ -1,0 +1,53 @@
+.glitch-wrapper{
+    padding-top:180px;
+    width:100vw;
+    text-align:center;
+    animation:glitch 2s linear infinite;
+    margin-bottom:110px;
+}
+
+
+.glitch-text, button{
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+.glitch-text {
+    position:relative;
+    z-index:2;
+    opacity:.9;
+    margin:0 auto;
+    text-shadow:0 0 3px white;
+    animation:glitch 3s infinite;
+    cursor:pointer;
+    font-size:52px;
+    color:white;
+}
+
+
+button {
+    display: block;
+    color: white;
+    /*opacity:.6;*/
+    box-shadow:0 0 3px 6px darkred,0 0 3px darkred;
+    text-shadow:0 0 3px black;
+    background: black;
+    border: 0;
+    padding: 7px;
+    margin: 0 auto;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition:200ms;
+}
+
+button:hover, button:focus, button:active {
+    box-shadow:0 0 3px 6px black;
+    text-shadow:0 0 3px white;
+    background:black;
+    color: white;
+    transition:200ms;
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
