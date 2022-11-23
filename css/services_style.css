@@ -1,0 +1,46 @@
+@import "styles.css";
+
+.services-container {
+    color: white;
+    padding-top: 50px;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-table {
+    position: relative;
+    width: 50%;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.right-photo {
+    padding-top: 2px;
+    position: relative;
+    width: 50%;
+}
+
+#contrast-photo {
+    width: 86%;
+    height: auto;
+}
+
+/* price-table style */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+    height: auto;
+}
+
+td {
+    border: 1px solid darkred;
+    text-align: left;
+    padding: 8px;
+    font-size: 1.3rem;
+    font-family: Tahoma;
+    font-weight: bolder;
+}

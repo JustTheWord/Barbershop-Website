@@ -7,7 +7,7 @@
 
 <?php require __DIR__ . '/_header.php' ?>
 
-<div class="about-container">
+<div class="home-container">
 
     <div class="left-side">
         <img id="about-back-image" src="/images/nope.jpg" alt="about-back">

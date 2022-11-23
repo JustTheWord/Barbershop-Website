@@ -13,8 +13,8 @@ declare(strict_types=1);
     <nav class="header-main-menu">
         <ul class="nav-links">
 
-            <li><a class="about" href="http://localhost:8000">
-                    <span>About</span>
+            <li><a class="home" href="http://localhost:8000">
+                    <span>Home</span>
                 </a></li>
 
             <li><a class="services" href="http://localhost:8000/services">

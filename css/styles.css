@@ -70,14 +70,14 @@ a:hover {
     height: 25px;
 }
 
-body.main-body .nav-links li a.about {
+body.main-body .nav-links li a.home {
     color: white;
     font-size: 100%;
     text-decoration: underline;
     font-weight: bolder;
 }
 
-.about-container {
+.home-container {
     padding-top: 50px;
     height: 60%;
     width: 100%;
