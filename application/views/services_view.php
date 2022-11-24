@@ -12,85 +12,37 @@ declare(strict_types=1);
 
 <div class="services-container">
 
-    <div class="price-table">
-        <table>
-            <tr>
-                <td>Haircut model (Fade, Crop... atd)</td>
-                <td>600</td>
-            </tr>
+    <div class="navigation-bar">
+        <span id="bar-tittle"> Services </span>
+        <a>Haircut model</a>
+        <a>Haircut & Shave</a>
+        <a>Shave & Beard</a>
+        <a>Father & Son</a>
+    </div>
 
-            <tr>
-                <td>Haircut ( ISIQ Card )</td>
-                <td>500</td>
-            </tr>
-            <tr>
-                <td>Haircut & shave ( Hot wet towel )</td>
-                <td>900</td>
-            </tr>
-            <tr>
-                <td>Haircut long hair</td>
-                <td>650</td>
-            </tr>
-            <tr>
-                <td>Haircut long hair &amp; beard</td>
-                <td>950</td>
-            </tr>
-            <tr>
-                <td>Haircut & beard ( ISIQ Card )</td>
-                <td>900</td>
-            </tr>
-            <tr>
-                <td>Haircuting machine ( Buzz Cut )</td>
-                <td>450</td>
-            </tr>
-            <tr>
-                <td>Little man (Child Haircut)</td>
-                <td>450</td>
-            </tr>
-            <tr>
-                <td>Haircut ( ISIQ Card )</td>
-                <td>500</td>
-            </tr>
-            <tr>
-                <td>Shave beard ( Hot wet towel )</td>
-                <td>450</td>
-            </tr>
-            <tr>
-                <td>Head shaving</td>
-                <td>500</td>
-            </tr>
-            <tr>
-                <td>Beard camouflage</td>
-                <td>400</td>
-            </tr>
-            <tr>
-                <td>Father & Son</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td>Wax epilation</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>Face sauna </td>
-                <td>400</td>
-            </tr>
-            <tr>
-                <td>Eyebrow correction with threads</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Haircut & Face sauna</td>
-                <td>1000</td>
-            </tr>
+    <div class="images-container">
 
-        </table>
+        <div class="service">
+            <img id="haircut-image" src="images/services/haircut_picture_check.png" alt="haircut-back">
+
+            <div class="info-container">
+                <div>
+                    <h2 class="name">Haircut</h2>
+                    <h4 class="annotation">Fade, Crop atd</h4>
+                </div>
+
+                <div class="price">
+                    <h5>Barber:</h5>
+                    <h6>350-600</h6>
+                </div>
+            </div>
+
+
+
+        </div>
 
     </div>
 
-    <div class="right-photo">
-        <img id="contrast-photo" src="/images/contrast_photo.png" alt="contrast-photo">
-    </div>
 </div>
 
 </body>
