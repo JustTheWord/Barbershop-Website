@@ -2,16 +2,19 @@ body {
     background-color: black;
 }
 
+
 a {
     text-decoration: none;
     color: white;
 }
+
 
 a:hover {
     color: crimson;
     border-color: black;
     cursor: pointer;
 }
+
 
 .nav-links a:active {
     color: white;
@@ -20,13 +23,33 @@ a:hover {
 
 }
 
+
+.header-logo figure {
+    position: relative;
+    width: 25%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
 .logo {
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 
+
 .header-container {
-    height: 20%;
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    z-index: 5;
+
+    max-height: 130px;
+    /*height: auto;*/
     width: 100%;
     overflow: visible;
 
@@ -36,13 +59,14 @@ a:hover {
     justify-content: space-between;
 }
 
+
 .header-main-menu {
-    padding-top: 55px;
+    padding-top: 50px;
     float: right;
     height: 100%;
     width: 100%;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-family: 'DIN Next LT W01 Bold', sans-serif;
 
 }
@@ -51,7 +75,7 @@ a:hover {
     float: right;
     list-style: none;
     width: 80%;
-    height: 100%;
+    height: auto;
 
     display: flex;
     flex-flow: row wrap;
@@ -204,6 +228,7 @@ body.team-body .nav-links li a.team {
 body.sign-in-body {
     background-color: white;
 }
+
 body.sign-in-body .nav-links li a.sign-in {
     color: white;
     font-size: 100%;
