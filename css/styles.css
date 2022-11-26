@@ -26,7 +26,7 @@ a:hover {
 
 .header-logo figure {
     position: relative;
-    width: 25%;
+    width: 30%;
     left: 0;
     right: 0;
     top: 0;
@@ -49,10 +49,9 @@ a:hover {
     z-index: 5;
 
     max-height: 130px;
-    /*height: auto;*/
+    height: auto;
     width: 100%;
     overflow: visible;
-
 
     display: flex;
     flex-flow: row;

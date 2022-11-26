@@ -5,7 +5,7 @@
     background-color: black;
     color: white;
     padding-top: 50px;
-    height: 60%;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,8 +22,9 @@
 }
 
 .navigation-bar-container {
+    color: white;
     padding-left: 30px;
-    /*margin: 0px;*/
+    padding-top: 50px;
 }
 
 
@@ -51,59 +52,56 @@
 }
 
 
-/*.tickets-container {*/
-/*    width: 100%;*/
-/*}*/
+.tickets-container {
+    width: 80%;
+    height: auto;
+}
 
-.ticket  {
+.ticket {
     display: flex;
-    flex-flow: row-reverse nowrap;
-    align-content: center;
-    /*top: 300px;*/
-    /*left: 700px;*/
+    justify-content: center;
+}
+
+.info-container {
+    width: 60%;
+    height: auto;
+    position: relative;
+
+
     background-color: black;
     color: white;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-family: 'DIN Next LT W01 Bold', sans-serif;
     padding: 16px 24px;
     margin: 50px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     border: 4px solid darkred;
     border-radius: 5px;
 }
 
-#haircut-image {
-    width: 300%;
-    height: auto;
-    /*position: relative;*/
-    /*right: 300px;*/
+#haircut {
+    background-image: url("/images/services/haircut_picture_check.png");
+    background-position-x: left;
 }
 
-.info-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-
-    left: 150px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    flex-flow: column;
-    justify-content: space-between;
-
+#haircut-shave {
+    background-image: url("/images/services/hair_shave_picture_check.png");
+    background-position-x: left;
 }
+
+
 
 .price {
     padding-top: 30%;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
 button {
     font-family: monospace;
     font-weight:bold;
+    /*color: darkred;*/
 
     display:block;
     box-shadow: 0 0 3px 6px white, 0 0 3px white;
@@ -112,20 +110,21 @@ button {
 
     border: 0;
     padding: 7px;
-    margin: 3%;
+    /*margin: 3%;*/
     outline: none;
     cursor: pointer;
     margin-top: 30px;
-    font-size: 32px;
+    font-size: 28px;
     transition: 200ms;
 }
 
 button:hover, button:focus, button:active {
     box-shadow: 0 0 3px 6px darkred;
     text-shadow: 0 0 3px white;
-    background:black;
+    background: black;
     color: white;
-    transition:100ms;
-    border-top-left-radius:5px;
-    border-bottom-right-radius:5px;
+    transition: 100ms;
+
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

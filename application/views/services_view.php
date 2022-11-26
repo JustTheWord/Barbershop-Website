@@ -23,19 +23,12 @@ declare(strict_types=1);
 
     <div class="tickets-container">
 
-        <div class="ticket" id="haircut">
-            <img id="haircut-image" src="images/services/haircut_picture_check.png" alt="haircut-back">
+        <div class="ticket">
 
-            <div class="info-container">
-                <div>
-                    <h2 class="name">Haircut</h2>
-                    <h4 class="annotation">Fade, Crop atd</h4>
-                </div>
-
-                <div class="price">
-                    <h5>Barber:</h5>
-                    <h6>350-600</h6>
-                </div>
+            <div class="info-container" id="haircut">
+                <h3 class="name">Haircut</h3>
+                <h4 class="annotation">Fade, Crop atd</h4>
+                <h4>Barber: 350-600</h4>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now">Book Now</button>
@@ -44,29 +37,44 @@ declare(strict_types=1);
 
         </div>
 
-        <div class="ticket" id="haircut-shave">
 
-            <div class="info-container">
-                <div>
-                    <h2 class="name">Haircut & Shave</h2>
-                </div>
+        <div class="ticket">
 
-                <div class="price">
-                    <h5>Barber:</h5>
-                    <h6>550-900</h6>
-                </div>
+            <div class="info-container" id="haircut-shave">
+                <h3 class="name">Haircut & Shave</h3>
+                <br>
+                <h4>Barber: 350-600</h4>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now">Book Now</button>
                 </a>
-
             </div>
 
         </div>
 
-    </div>
-
-</div>
+        <!--        <div class="ticket" id="haircut-shave">-->
+<!---->
+<!--            <div class="info-container">-->
+<!--                <div>info-->
+<!--                    <h2 class="name">Haircut & Shave</h2>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="price">-->
+<!--                    <h5>Barber:</h5>-->
+<!--                    <h6>550-900</h6>-->
+<!--                </div>-->
+<!---->
+<!--                <a href="http://localhost:8000/booking">-->
+<!--                    <button class="book-now">Book Now</button>-->
+<!--                </a>-->
+<!---->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!---->
+<!--</div>-->
 
 
 <script>

@@ -1,3 +1,29 @@
+debugIn = false;
+
+const buttons = document.querySelectorAll('.book-now');
+console.log(buttons)
+
+if (buttons.length > 0) {
+
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", (event) => {
+            event.target.parentElement.parentElement.style.borderColor = "black";
+        })
+    })
+
+    buttons.forEach(button => {
+        button.addEventListener("mouseout", (event) => {
+            event.target.parentElement.parentElement.style.borderColor = "darkred";
+        })
+    })
+
+}
+
+
+
+
+
+
 const menuLinks = document.querySelectorAll('.link-to-scroll[data-goto]');
 
 
