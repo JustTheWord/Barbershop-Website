@@ -15,6 +15,7 @@ declare(strict_types=1);
             <span id="bar-tittle">Services</span>
             <a class="link-to-scroll"  data-goto="#haircut" href="#">Haircut model</a>
             <a class="link-to-scroll"  data-goto="#haircut-shave" href="#">Haircut & Shave</a>
+            <a class="link-to-scroll"  data-goto="#haircut-beard" href="#">Haircut & Beard</a>
             <a class="link-to-scroll"  data-goto="" href="#">Shave & Beard</a>
             <a class="link-to-scroll" data-goto="" href="#">Father & Son</a>
         </div>
@@ -44,6 +45,21 @@ declare(strict_types=1);
                 <h3 class="name">Haircut & Shave</h3>
                 <br>
                 <h4>Barber: 350-600</h4>
+
+                <a href="http://localhost:8000/booking">
+                    <button class="book-now">Book Now</button>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="ticket">
+
+            <div class="info-container" id="haircut-beard">
+                <h3 class="name">Haircut & beard</h3>
+                <br>
+                <h4>Barber: 500-900</h4>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now">Book Now</button>

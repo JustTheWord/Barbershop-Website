@@ -80,12 +80,17 @@
 }
 
 #haircut {
-    background-image: url("/images/services/haircut_picture_check.png");
+    background-image: url("/images/services/haircut_picture_background.png");
     background-position-x: left;
 }
 
 #haircut-shave {
-    background-image: url("/images/services/hair_shave_picture_check.png");
+    background-image: url("/images/services/hair_shave_picture_background.png");
+    background-position-x: left;
+}
+
+#haircut-beard {
+    background-image: url("/images/services/shave_beard_picture_background.png");
     background-position-x: left;
 }
 
