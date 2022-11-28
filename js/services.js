@@ -1,7 +1,4 @@
-debugIn = false;
-
 const buttons = document.querySelectorAll('.book-now');
-console.log(buttons)
 
 if (buttons.length > 0) {
 
@@ -20,12 +17,7 @@ if (buttons.length > 0) {
 }
 
 
-
-
-
-
 const menuLinks = document.querySelectorAll('.link-to-scroll[data-goto]');
-
 
 if (menuLinks.length > 0) {
 
@@ -34,23 +26,21 @@ if (menuLinks.length > 0) {
     })
 }
 
-
 function onMenuLinkClick(event) {
 
     const menuLink = event.target;
-    console.log(menuLink);
 
-    if (menuLink.dataset.scrollTo && document.getElementById(menuLink.dataset.scrollTo)) {
+    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 
-        const scrollToBlock = document.getElementById(menuLink.dataset.scrollTo);
-        const   scrollToBlockValue = scrollToBlock.getBoundingClientRect().top + pageYOffset; // WITHOUT HEADER
+        const scrollToBlock = document.querySelector(menuLink.dataset.goto);
+        const scrollToBlockValue = scrollToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header-container').offsetHeight;
 
         window.scrollTo({
             top: scrollToBlockValue,
             behavior: "smooth"
         })
 
-        // event.preventDefault();
+        event.preventDefault();
     }
 }
 

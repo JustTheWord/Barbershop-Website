@@ -79,6 +79,7 @@
     border-radius: 5px;
 }
 
+
 #haircut {
     background-image: url("/images/services/haircut_picture_background.png");
     background-position-x: left;
@@ -94,6 +95,19 @@
     background-position-x: left;
 }
 
+#long-hair {
+    background-image: url("/images/services/long_hair_picture_background.png");
+    background-position-x: center;
+
+    position: relative;
+    text-align: right;
+}
+
+#long-hair-beard {
+    background-image: url("/images/services/long_hair_beard_picture_background.png");
+    background-position-x: left;
+
+}
 
 
 .price {
@@ -102,6 +116,7 @@
     justify-content: space-between;
     flex-flow: row nowrap;
 }
+
 
 button {
     font-family: monospace;
@@ -122,6 +137,14 @@ button {
     font-size: 28px;
     transition: 200ms;
 }
+
+
+#long-hair button {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 button:hover, button:focus, button:active {
     box-shadow: 0 0 3px 6px darkred;
