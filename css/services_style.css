@@ -55,6 +55,8 @@
 .tickets-container {
     width: 80%;
     height: auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .ticket {
@@ -63,7 +65,7 @@
 }
 
 .info-container {
-    width: 60%;
+    width: 100%;
     height: auto;
     position: relative;
 
@@ -74,9 +76,33 @@
     font-family: 'DIN Next LT W01 Bold', sans-serif;
     padding: 16px 24px;
     margin: 50px;
-    /*cursor: pointer;*/
     border: 4px solid darkred;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 1600px) {
+    .info-container {
+        width: 65%;
+        height: auto;
+        /*position: relative;*/
+
+    }
+}
+
+@media screen and (min-width: 1300px) and
+(max-width: 1599px){
+    .info-container {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) and
+(max-width: 1299px){
+    .info-container {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
