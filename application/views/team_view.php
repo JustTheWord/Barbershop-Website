@@ -15,7 +15,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/farhad.jpg" alt="farhad-image">
+            <img class="barber-photo" src="/images/farhad_orange.jpg" alt="farhad-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">
@@ -29,7 +29,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/ivan.jpg" alt="ivan-image">
+            <img class="barber-photo" src="/images/ivan_orange.jpg" alt="ivan-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">
@@ -41,7 +41,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/kirill.jpg" alt="kirill-image">
+            <img class="barber-photo" src="/images/kirill_orange.jpg" alt="kirill-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">

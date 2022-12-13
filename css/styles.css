@@ -10,14 +10,14 @@ a {
 
 
 a:hover {
-    color: crimson;
+    color: rgb(240, 130, 0);;
     border-color: black;
     cursor: pointer;
 }
 
 
 .nav-links a:active {
-    color: white;
+    color: rgb(240, 130, 0);
     font-size: 100%;
     font-weight: bolder;
 
@@ -26,7 +26,8 @@ a:hover {
 
 .header-logo figure {
     position: relative;
-    width: 30%;
+    width: 40%;
+
     left: 0;
     right: 0;
     top: 0;
@@ -85,7 +86,7 @@ a:hover {
 
 .header-main-menu li a.sign-in {
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(210, 100, 0, .8);
 }
 
 .header-main-menu li a.sign-in:hover {
@@ -101,7 +102,6 @@ a:hover {
     height: 25px;
 }
 
-
 .home-container {
     padding-top: 100px;
     width: 100%;
@@ -110,6 +110,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
 }
+
 
 .intro-container {
     width: 1500px;
@@ -127,26 +128,14 @@ a:hover {
     height: auto;
     margin-right: 0;
 
-    /*background-color: black;*/
-    /*color: white;*/
-    /*font-size: 1.9rem;*/
-    /*font-family: 'DIN Next LT W01 Bold', sans-serif;*/
-    /*padding: 16px 24px;*/
-    /*margin: 50px;*/
-    /*border: 4px solid darkred;*/
-    /*border-radius: 5px;*/
 }
 
-/*#about-back-image {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
 
 #moto-container {
     position: relative;
     top: 5%;
     left: 10%;
-    width: 50%;
+    width: 60%;
     padding: 3px 5px;
 
     background-color: black;
@@ -164,7 +153,7 @@ a:hover {
     top: 10%;
     left: 10%;
     background-color: black;
-    color: darkred;
+    color: rgb(250, 140, 0);
     font-size: 1.6rem;
     font-family: Futura;
     padding: 3px 5px;
@@ -190,28 +179,23 @@ a:hover {
     font-family: 'DIN Next LT W01 Bold', sans-serif;
     padding: 16px 24px;
     cursor: pointer;
-    border: 4px solid darkred;
+    border: 3px solid rgb(200, 100, 0);
     border-radius: 5px;
 }
 
 .right-side a.reservation-btn span:hover {
 
-    color: crimson;
+    color: rgb(240, 130, 0);
 
     box-shadow:0 0 3px 6px black;
-    text-shadow:0 0 3px white;
-    background:black;
-    transition:200ms;
-    border-top-left-radius:5px;
-    border-bottom-right-radius:5px;
+    text-shadow:0 0 2px white;
+    background: black;
+    transition: 200ms;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-color: black;
 }
 
-/*#back-reservation-image {*/
-/*    padding-top: 2px;*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*}*/
 
 body.main-body .nav-links li a.home {
     color: white;
@@ -261,6 +245,24 @@ body.error-body {
     background-color: black;
 }
 
+
+@media screen and (max-width: 1400px){
+    .nav-links {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    #moto-container {
+        font-size: 1.6rem;
+    }
+    #moto {
+        font-size: 1.3rem;
+    }
+    .right-side a span {
+        font-size: 1.6rem
+    }
+}
 
 
 @media (max-width: 767px) {

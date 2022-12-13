@@ -10,7 +10,7 @@ if (buttons.length > 0) {
 
     buttons.forEach(button => {
         button.addEventListener("mouseout", (event) => {
-            event.target.parentElement.parentElement.style.borderColor = "darkred";
+            event.target.parentElement.parentElement.style.borderColor = "rgb(210, 100, 0)";
         })
     })
 

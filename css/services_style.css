@@ -19,17 +19,18 @@
     font-family: 'DIN Next LT W01 extraBold', sans-serif;
     font-weight: bold;
     padding-bottom: 2%;
+    padding-top: 30px;
 }
 
 .navigation-bar-container {
     color: white;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 50px;
 }
 
 
 .navigation-bar-container a:hover {
-    color: crimson;
+    color: rgb(240, 130, 0);
 }
 
 
@@ -53,10 +54,11 @@
 
 
 .tickets-container {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-flow: column nowrap;
+    padding-top: 30px;
 }
 
 .ticket {
@@ -65,26 +67,34 @@
 }
 
 .info-container {
-    width: 100%;
+    width: 80%;
     height: auto;
+    /*max-height: 320px !important;*/
     position: relative;
 
 
     background-color: black;
     color: white;
-    font-size: 1.9rem;
-    font-family: 'DIN Next LT W01 Bold', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'Calluna', serif;
     padding: 16px 24px;
-    margin: 50px;
-    border: 4px solid darkred;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border: 4px solid rgb(210, 100, 0);
     border-radius: 5px;
+}
+
+.info-container > h2 {
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 1600px) {
     .info-container {
-        width: 65%;
+        width: 55%;
         height: auto;
+        /*max-height: 320px;*/
         /*position: relative;*/
+        /*background-position-x: right;*/
 
     }
 }
@@ -92,47 +102,49 @@
 @media screen and (min-width: 1300px) and
 (max-width: 1599px){
     .info-container {
-        width: 80%;
+        width: 60%;
         height: auto;
+        /*background-position-x: right;*/
     }
 }
 
 @media screen and (min-width: 1200px) and
 (max-width: 1299px){
     .info-container {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 }
 
 
 #haircut {
-    background-image: url("/images/services/haircut_picture_background.png");
+    background-image: url("/images/services/haircut_picture_background_755_355.png");
     background-position-x: left;
 }
 
 #haircut-shave {
-    background-image: url("/images/services/hair_shave_picture_background.png");
+    background-image: url("/images/services/hair_shave_picture_background_755_355.png");
     background-position-x: left;
 }
 
 #haircut-beard {
-    background-image: url("/images/services/shave_beard_picture_background.png");
+    background-image: url("/images/services/shave_beard_picture_background_750-355.png");
     background-position-x: left;
 }
 
 #long-hair {
-    background-image: url("/images/services/long_hair_picture_background.png");
+    background-image: url("/images/services/long_hair_picture_background_750_355.png");
     background-position-x: center;
 
     position: relative;
     text-align: right;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
 }
 
 #long-hair-beard {
-    background-image: url("/images/services/long_hair_beard_picture_background.png");
+    background-image: url("/images/services/long_hair_beard_picture_background_750_355.png");
     background-position-x: left;
-
 }
 
 
@@ -145,8 +157,8 @@
 
 
 button {
-    font-family: monospace;
-    font-weight:bold;
+    font-family: Avenir;
+    /*font-weight:bold;*/
     /*color: darkred;*/
 
     display:block;
@@ -160,7 +172,7 @@ button {
     outline: none;
     cursor: pointer;
     margin-top: 30px;
-    font-size: 28px;
+    font-size: 1.2rem;
     transition: 200ms;
 }
 
@@ -173,7 +185,7 @@ button {
 
 
 button:hover, button:focus, button:active {
-    box-shadow: 0 0 3px 6px darkred;
+    box-shadow: 0 0 3px 4px rgb(200, 100, 0);
     text-shadow: 0 0 3px white;
     background: black;
     color: white;

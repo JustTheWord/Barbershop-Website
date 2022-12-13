@@ -28,12 +28,13 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container" id="haircut">
-                <h3 class="name">Haircut</h3>
-                <h4 class="annotation">Fade, Crop atd</h4>
-                <h4>Barber: 350-600</h4>
+                <h2 class="name">Haircut</h2>
+                <h5 class="annotation">Fade, Crop atd</h5>
+                <br>
+                <h3>Barber: 350-600</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -43,12 +44,13 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container" id="haircut-shave">
-                <h3 class="name">Haircut & Shave</h3>
+                <h2 class="name">Haircut &</h2>
+                <h2 class="name">Shave</h2>
                 <br>
-                <h4>Barber: 350-600</h4>
+                <h3>Barber: 350-600</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -58,12 +60,12 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container" id="haircut-beard">
-                <h3 class="name">Haircut & Beard</h3>
+                <h2 class="name">Haircut & Beard</h2>
                 <br>
-                <h4>Barber: 500-900</h4>
-
+                <br>
+                <h3>Barber: 500-900</h3>
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -73,12 +75,13 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container" id="long-hair">
-                <h3 class="name">Haircut Long Hair</h3>
+                <h2 class="name">Haircut</h2>
+                <h2 class="name">Long Hair</h2>
                 <br>
-                <h4>Barber: 400-650</h4>
+                <h3>Barber: 400-650</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -88,12 +91,13 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container" id="long-hair-beard">
-                <h3 class="name">Haircut Long Hair &</h3>
-                <h3 class="name">Beard</h3>
-                <h4>Barber: 550-950</h4>
+                <h2 class="name">Long Hair &</h2>
+                <h2 class="name">Beard</h2>
+                <br>
+                <h3>Barber: 550-950</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -103,12 +107,12 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container">
-                <h3 class="name">Haircut & beard</h3>
+                <h2 class="name">Haircut & beard</h2>
                 <br>
-                <h4>Barber: 500-900</h4>
+                <h3>Barber: 500-900</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
@@ -118,12 +122,12 @@ declare(strict_types=1);
         <div class="ticket">
 
             <div class="info-container">
-                <h3 class="name">Haircut & beard</h3>
+                <h2 class="name">Haircut & beard</h2>
                 <br>
-                <h4>Barber: 500-900</h4>
+                <h3>Barber: 500-900</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">Book Now</button>
+                    <button class="book-now">BOOK NOW</button>
                 </a>
             </div>
 
