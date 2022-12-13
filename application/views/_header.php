@@ -10,6 +10,10 @@ declare(strict_types=1);
         </figure>
     </div>
 
+    <div class="header-burger">
+        <span></span>
+    </div>
+
     <nav class="header-main-menu">
         <ul class="nav-links">
 

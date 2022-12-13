@@ -84,6 +84,7 @@ class Route
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
     <style>@import "/css/styles.css";</style>
 </head>

@@ -11,8 +11,11 @@ declare(strict_types=1);
 <div class="services-container">
 
     <div class="navigation-bar-container">
+        <div class="bar-title">
+            <span>Services</span>
+        </div>
         <div class="navigation-bar">
-            <span id="bar-tittle">Services</span>
+
             <a class="link-to-scroll"  data-goto="#haircut" href="#haircut">Haircut model</a>
             <a class="link-to-scroll"  data-goto="#haircut-shave" href="#haircut-shave">Haircut & Shave</a>
             <a class="link-to-scroll"  data-goto="#haircut-beard" href="#haircut-beard">Haircut & Beard</a>

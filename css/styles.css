@@ -252,6 +252,29 @@ body.error-body {
     }
 }
 
+@media screen and (max-width: 1100px){
+    .nav-links {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .nav-links {
+        width: 140%;
+    }
+
+    .header-logo figure {
+        position: relative;
+        width: 35%;
+
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+}
+
 @media screen and (max-width: 1400px){
     #moto-container {
         font-size: 1.6rem;
@@ -275,7 +298,7 @@ body.error-body {
 
     .header-logo figure {
         position: relative;
-        width: 25%;
+        width: 50%;
         left: 0;
         right: 0;
         top: 0;
