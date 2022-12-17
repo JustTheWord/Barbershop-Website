@@ -2,48 +2,54 @@
 declare(strict_types=1);
 ?>
 
-<div class="header-container">
+<!--Wrapper for demonstration-->
+<div class="wrapper">
+<!--    Content-->
+    <header class="header">
+        <div class="container">
+            <div class="header-body">
 
-    <div class="header-logo">
-        <figure>
-            <img src="/images/white_framed_black_back_logo.png" class="logo" alt="logo">
-        </figure>
-    </div>
-
-    <div class="header-burger">
-        <span></span>
-    </div>
-
-    <nav class="header-main-menu">
-        <ul class="nav-links">
-
-            <li><a class="home" href="http://localhost:8000">
-                    <span>Home</span>
-                </a></li>
-
-            <li><a class="services" href="http://localhost:8000/services">
-                    <span>Services</span>
-                </a></li>
-
-            <li><a class="team" href="http://localhost:8000/team">
-                    <span>Team</span>
-                </a></li>
-
-            <li><a class="contacts" href="http://localhost:8000/contacts">
-                    <span>Contacts</span>
-                </a></li>
-
-            <li><a class="sign-in" href="http://localhost:8000/signin">
-                    <span>Sign-in</span>
-                </a></li>
-
-            <li>
-                <a aria-label="CZ" href="http://localhost:8000/404">
-                    <img id="cz_flag" src="/images/cz.svg" alt="flag">
+                <a href="#" class="header-logo">
+                    <img src="/images/logo.png" alt="logo">
                 </a>
-            </li>
 
-        </ul>
-    </nav>
+                <div class="header-container">
+                    <input id="app-navigation-toggle" type="checkbox" name="menu-checked" value="0">
+                    <label id="app-navigation-toggle-label" for="app-navigation-toggle">Menu</label>
+
+                    <nav class="header-menu">
+                        <ul class="header-list" >
+
+                            <li ><a class="home" href = "http://localhost:8000" >
+                                    <span > Home</span >
+                                </a></li >
+
+                            <li ><a class="services" href = "http://localhost:8000/services" >
+                                    <span > Services</span >
+                                </a ></li >
+
+                            <li ><a class="team" href = "http://localhost:8000/team" >
+                                    <span > Team</span >
+                                </a ></li >
+
+                            <li ><a class="contacts" href = "http://localhost:8000/contacts" >
+                                    <span > Contacts</span >
+                                </a ></li >
+
+                            <li ><a class="sign-in" href = "http://localhost:8000/signin" >
+                                    <span > Sign - in</span >
+                                </a ></li >
+
+                            <li >
+                                <a href = "http://localhost:8000/404" >
+                                    <img id = "cz_flag" src = "/images/cz.svg" alt = "flag" >
+                                </a >
+                            </li >
+
+                        </ul >
+                    </nav >
+                </div>
+            </div>
+        </div>
+    </header>
 </div>
-

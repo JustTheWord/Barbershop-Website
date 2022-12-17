@@ -1,3 +1,6 @@
+// console.log(document.querySelector(app-navigation-toggle).value);
+
+
 const buttons = document.querySelectorAll('.book-now');
 
 if (buttons.length > 0) {
@@ -33,7 +36,7 @@ function onMenuLinkClick(event) {
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 
         const scrollToBlock = document.querySelector(menuLink.dataset.goto);
-        const scrollToBlockValue = scrollToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header-container').offsetHeight;
+        const scrollToBlockValue = scrollToBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header-body').offsetHeight;
 
         window.scrollTo({
             top: scrollToBlockValue,
