@@ -38,15 +38,15 @@ button {
     margin: 0 auto;
     outline: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 25px;
     transition:200ms;
 }
 
 button:hover, button:focus, button:active {
     box-shadow:0 0 3px 6px black;
-    text-shadow:0 0 3px white;
+    /*text-shadow:0 0 3px rgb(240, 130, 0);*/
     background:black;
-    color: white;
+    color: rgb(240, 130, 0);
     transition:200ms;
     border-top-left-radius:5px;
     border-bottom-right-radius:5px;

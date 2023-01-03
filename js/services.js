@@ -1,6 +1,3 @@
-// console.log(document.querySelector(app-navigation-toggle).value);
-
-
 const buttons = document.querySelectorAll('.book-now');
 
 if (buttons.length > 0) {
@@ -46,4 +43,3 @@ function onMenuLinkClick(event) {
         event.preventDefault();
     }
 }
-

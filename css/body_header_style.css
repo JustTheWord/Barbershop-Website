@@ -102,106 +102,6 @@ a:hover {
 }
 
 
-.home-container {
-    padding-top: 200px;
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-
-.intro-container {
-    width: 1500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.left-side {
-    background-image: url("/images/left_side.png");
-    background-position-x: right;
-
-    position: relative;
-    width: 50%;
-    height: auto;
-    margin-right: 0;
-
-}
-
-
-#moto-container {
-    position: relative;
-    top: 5%;
-    left: 10%;
-    width: 60%;
-    padding: 3px 5px;
-
-    background-color: black;
-    color: white;
-    font-size: 2.1rem;
-    font-family: Futura;
-
-    cursor: pointer;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-
-#moto {
-    position: relative;
-    top: 10%;
-    left: 10%;
-    background-color: black;
-    color: rgb(250, 140, 0);
-    font-size: 1.5rem;
-    font-family: Futura;
-    padding: 3px 5px;
-    cursor: pointer;
-}
-
-
-.right-side {
-    background-image: url("/images/right_side.png");
-    background-position-x: left;
-
-    position: relative;
-    width: 50%;
-    margin-left: 0;
-}
-
-
-.right-side a span {
-    position: relative;
-    top: 65%;
-    left: 60%;
-    background-color: black;
-    color: white;
-    font-size: 2.1rem;
-    font-family: 'DIN Next LT W01 Bold', sans-serif;
-    padding: 16px 24px;
-    cursor: pointer;
-    border: 3px solid rgb(200, 100, 0);
-    border-radius: 5px;
-}
-
-
-.right-side a.reservation-btn span:hover {
-
-    color: rgb(240, 130, 0);
-
-    box-shadow:0 0 3px 6px black;
-    text-shadow:0 0 2px rgb(240, 130, 0);
-    background: black;
-    transition: 200ms;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-color: black;
-}
-
-
 body.main-body .header-list li a.home {
     color: white;
     font-size: 100%;
@@ -233,7 +133,6 @@ body.team-body .header-list li a.team {
     font-weight: bolder;
 }
 
-
 body.sign-in-body {
     background-color: white;
 }
@@ -255,7 +154,6 @@ body.sign-in-body .header-container {
 body.error-body {
     background-color: black;
 }
-
 
 
 #app-navigation-toggle {

@@ -1,0 +1,200 @@
+@import "body_header_style.css";
+
+.home-container {
+    padding-top: 200px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-intro {
+    display: none;
+}
+
+.intro-container {
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.left-side {
+    background-image: url("/images/left_side.png");
+    background-position-x: right;
+
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin-right: 0;
+
+}
+
+#haircut-curved-750-250 {
+    display: none;
+}
+
+#haircut-curved-750-250-2 {
+    display: none;
+}
+
+
+#home-info {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 60%;
+    padding: 3px 5px;
+
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-family: Futura;
+
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+#moto {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    background-color: black;
+    color: rgb(250, 140, 0);
+    font-size: 25px;
+    font-family: Futura;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+
+.right-side {
+    background-image: url("/images/right_side.png");
+    background-position-x: left;
+
+    position: relative;
+    width: 50%;
+    margin-left: 0;
+}
+
+
+.right-side a span {
+    position: relative;
+    top: 65%;
+    left: 60%;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-family: 'DIN Next LT W01 Bold', sans-serif;
+    padding: 16px 24px;
+    cursor: pointer;
+    border: 3px solid rgb(200, 100, 0);
+    border-radius: 5px;
+}
+
+
+.right-side a.reservation-btn span:hover {
+
+    color: rgb(240, 130, 0);
+
+    box-shadow:0 0 3px 6px black;
+    text-shadow:0 0 2px rgb(240, 130, 0);
+    background: black;
+    transition: 200ms;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-color: black;
+}
+
+@media(max-width: 1499px) {
+    #home-info {
+        font-size: 30px;
+    }
+
+    #moto {
+        font-size: 20px;
+    }
+
+    .right-side a span {
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 1199px) {
+
+    .home-container {
+        padding-top: 70px;
+    }
+
+    .intro-container {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 752px;
+    }
+
+
+    .mobile-intro {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 20px 0;
+        margin: 0 auto;
+
+        color: rgb(240, 130, 0);
+    }
+
+    #greeting {
+        font-size: 20px;
+    }
+    #barbershop-name {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .right-side {
+        background-image: url("/images/haircut_curved_750_250.png");
+
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 750px;
+        height: 50%;
+
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: rgb(240, 130, 0);
+    }
+
+    .right-side a span {
+        position: relative;
+        background-color: black;
+        color: rgb(240, 130, 0);
+        font-size: 20px;
+        padding: 12px 16px;
+
+        box-shadow:0 0 3px 6px black;
+        text-shadow:0 0 2px rgb(240, 130, 0);
+        background: black;
+        transition: 200ms;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-color: black;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    #home-info {
+        display: none;
+    }
+
+    #moto {
+        display: none;
+    }
+}
