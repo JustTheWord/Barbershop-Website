@@ -17,6 +17,7 @@ if (buttons.length > 0) {
 }
 
 
+
 const menuLinks = document.querySelectorAll('.link-to-scroll[data-goto]');
 
 if (menuLinks.length > 0) {

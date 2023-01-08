@@ -6,7 +6,8 @@
     height: auto;
 
     display: flex;
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .mobile-intro {
@@ -110,6 +111,74 @@
     border-color: black;
 }
 
+.about-container {
+    /*margin-top: 100px;*/
+    /*max-width: 1000px;*/
+
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    max-height: 500px;
+    margin-top: 150px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.about {
+    width: 750px;
+    height: 500px;
+    color: white;
+    font-size: 30px;
+
+    background-color: black;
+}
+
+.about > h3 {
+    color: rgb(240, 130, 0);
+}
+
+.about > h3.orange {
+    color: rgb(240, 130, 0);
+}
+
+.pattern-services-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.pattern-services {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.pattern-services img {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+.pattern-services label {
+    font-size: 15px;
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgb(240, 130, 0, .8);
+    /*width: 750px;*/
+    /*height: 500px;*/
+}
+
+.video-container iframe {
+    width: 750px;
+    height: 500px;
+}
+
+
 @media(max-width: 1499px) {
     #home-info {
         font-size: 30px;
@@ -134,7 +203,8 @@
     .intro-container {
         display: flex;
         flex-flow: column nowrap;
-        max-width: 752px;
+        max-width: 750px;
+        width: 100%;
     }
 
 
@@ -160,7 +230,6 @@
         background-image: url("/images/haircut_curved_750_250.png");
 
         position: relative;
-        margin: 0 auto;
         width: 100%;
         max-width: 750px;
         height: 50%;
@@ -179,7 +248,6 @@
 
         box-shadow:0 0 3px 6px black;
         text-shadow:0 0 2px rgb(240, 130, 0);
-        background: black;
         transition: 200ms;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -197,4 +265,31 @@
     #moto {
         display: none;
     }
+
+    .about-container {
+        width: 100%;
+        height: auto;
+        max-width: 750px;
+        max-height: 1000px;
+        margin-top: 0;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+
+        background-color: black;
+    }
+
+    .video-container iframe {
+        width: 100%;
+    }
+
 }
