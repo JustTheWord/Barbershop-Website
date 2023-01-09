@@ -112,9 +112,6 @@
 }
 
 .about-container {
-    /*margin-top: 100px;*/
-    /*max-width: 1000px;*/
-
     width: 100%;
     height: auto;
     max-width: 1500px;
@@ -133,6 +130,10 @@
     font-size: 30px;
 
     background-color: black;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
 }
 
 .about > h3 {
@@ -155,27 +156,29 @@
     display: flex;
     flex-flow: column nowrap;
 }
+
 .pattern-services img {
     padding: 10px;
     width: 60px;
     height: 60px;
 }
+
 .pattern-services label {
     font-size: 15px;
 }
 
 .video-container {
     position: relative;
-    max-width: 100%;
+    width: 50%;
     height: auto;
+    /*max-width: 100%;*/
+    /*height: auto;*/
     border: 2px solid rgb(240, 130, 0, .8);
-    /*width: 750px;*/
-    /*height: 500px;*/
 }
 
 .video-container iframe {
-    width: 750px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -268,14 +271,13 @@
 
     .about-container {
         width: 100%;
-        height: auto;
+        height: 750px;
         max-width: 750px;
-        max-height: 1000px;
+        max-height: 750px;
         margin-top: 0;
 
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
     }
 
     .about {
@@ -288,8 +290,22 @@
         background-color: black;
     }
 
-    .video-container iframe {
+    .pattern-services-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .pattern-services {
+        width: 135px;
+        height: 135px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .video-container {
+        position: relative;
         width: 100%;
+        height: 100%;
     }
 
 }
