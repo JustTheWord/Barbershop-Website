@@ -164,6 +164,19 @@ body.error-body {
     display: none;
 }
 
+footer {
+    margin-top: 100px;
+    background-color: black; /* Set the background color to dark grey */
+    color: rgb(240, 130, 0); /* Set the text color to white */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding on the top and bottom */
+}
+
+footer p {
+    margin: 0; /* Remove the margin */
+    padding: 10px 0 0 0;
+}
+
 
 @media (max-width: 1199px) {
 
@@ -255,5 +268,9 @@ body.error-body {
 
     .header-menu li a.sign-in:hover {
         padding: 0 0 0 0;
+    }
+
+    footer {
+        margin-top: 0;
     }
 }

@@ -86,7 +86,7 @@ class Route
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <style>@import "/css/body_header_style.css";</style>
+    <style>@import "/css/body_header_footer_style.css";</style>
 </head>
 
 </html>

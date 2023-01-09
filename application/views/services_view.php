@@ -140,3 +140,5 @@ declare(strict_types=1);
 <script src="/js/services.js"></script>
 
 </body>
+
+<?php require __DIR__ . '/_footer.php' ?>

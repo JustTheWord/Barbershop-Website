@@ -79,11 +79,38 @@
 
     </div>
 
+    <div class="founder-container">
 
+        <div class="founder-image-container">
+            <img src="/images/farkhad_black.png">
+        </div>
 
+        <div class="founder-intro">
+
+            <p>HI FRIENDS,</p>
+            <p> I AM FARHAD – THE FOUNDER OF FARIAN BARBERSHOP.</p>
+            <p>A 6TH GENERATION BARBER WHERE THE SKILL OF PERSIAN BARBERING WAS PASSED FROM FATHER TO SON...</p>
+            <p>CERTIFIED ARCHITECT, MARKETER,
+                FINISHED COOKING COURSER AND,
+                OF COURSE, BARBER COURSES. DUE TO MY GREAT PASSION
+                FOR THE ART OF HAIRCUT, WITHOUT HESITATION STARTED THE FAMILY'S BUSINESS...
+            </p>
+            <p>BARBER IS MY PROFESSION, MY LIFE'S WORK. I'M AN IDEALIST, WHICH I SUFFER
+                SOMETIMES, BUT I'M PROUD OF INVESTING ALL 100% TO MY WORK.
+            </p>
+            <p>
+                I CREATE A STYLE, A STRONG IMAGE, HIGHLIGHTING THE SIDES OF A BETTER APPEARANCE.
+            </P>
+            <p>
+                FARIAN BARBERSHOP IS MY SPIRITUAL CHILD, IT IS AN EXTENSION OF MY FAMILY.
+                I AM HAPPY AND READY TO SHARE MY ART WITH PEOPLE.
+            </p>
+            <p>MOTTO: "PERFECTION HAS NO BOUNDARIES"</p>
+
+    </div>
 
 </div>
 
-
-
 </body>
+
+<?php require __DIR__ . '/_footer.php' ?>
