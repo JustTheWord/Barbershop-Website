@@ -1,0 +1,87 @@
+@import "body_header_footer_style.css";
+
+.contacts-container {
+    position: relative;
+    margin: 0 auto;
+
+    max-width: 1500px;
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.contact-info-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: white;
+
+    flex-flow: column nowrap;
+}
+
+.contact-info > h3 {
+    font-size: 25px;
+    color: rgb(240, 130, 0);
+}
+
+.contact-info > p {
+    font-size: 20px;
+    color: white;
+}
+
+.contacts-container > iframe {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+#facebook-icon {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 60%;
+}
+
+#instagram-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px;
+    border-radius: 30% 30%;
+
+}
+
+@media(max-width: 1199px) {
+
+    .contacts-container {
+        position: relative;
+        margin: 0 auto;
+
+        max-width: 750px;
+        max-height: 1000px;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        padding-top: 70px;
+    }
+
+    .contact-info-container {
+        position: relative;
+        height: auto;
+        color: white;
+    }
+
+    .contacts-container > iframe {
+        position: relative;
+        padding-top: 20px;
+        width: 100%;
+        height: 300px;
+    }
+}
