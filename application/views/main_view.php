@@ -31,7 +31,7 @@
         </div>
 
         <div class="right-side">
-            <img id="haircut-curved-750-250-2" src="/images/haircut_curved_750_250.png" alt="reservation-back">
+            <img id="haircut-image" src="/images/haircut.png" alt="reservation-back">
 
             <a class="reservation-btn" href="http://localhost:8000/booking">
                 <span>Book Now</span>
@@ -42,9 +42,7 @@
 
     <div class="about-container">
         <div class="about">
-<!--            Jediný tradiční perské holičství v Praze.-->
             <h3>The only traditional Persian barber shop in Prague.</h3>
-<!--            Nabízíme kvalitní služby za příjemné ceny.-->
             <h3>We offer quality services at reasonable prices.</h3>
 
             <div class="pattern-services-container">

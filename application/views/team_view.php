@@ -15,7 +15,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/farhad_orange.jpg" alt="farhad-image">
+            <img class="barber-photo" src="/images/farhad_team.jpg" alt="farhad-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">
@@ -29,7 +29,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/ivan_orange.jpg" alt="ivan-image">
+            <img class="barber-photo" src="/images/ivan_team.jpg" alt="ivan-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">
@@ -41,7 +41,7 @@ declare(strict_types=1);
 
         <div class="barber-presenter">
 
-            <img class="barber-photo" src="/images/kirill_orange.jpg" alt="kirill-image">
+            <img class="barber-photo" src="/images/kirill_team.jpg" alt="kirill-image">
 
             <div class="language-container">
                 <img class="language" src="/images/cz.svg" alt="cz-lang">
@@ -54,7 +54,44 @@ declare(strict_types=1);
 
     <div class="indent"></div>
 
-    <div></div>
+
+    <div id="gallery">
+        <h2>Works</h2>
+
+        <div class="row">
+
+            <div class="two-columns">
+                <div class="column">
+                    <a href="/images/Gallery/1.jpg"><img src="/images/Gallery/1.jpg" alt="work1"></a>
+                    <a href="/images/Gallery/5.jpg"><img src="/images/Gallery/5.jpg" alt="work2"></a>
+                    <a href="/images/Gallery/9.jpg"><img src="/images/Gallery/9.jpg" alt="work3"></a>
+                </div>
+
+                <div class="column">
+                    <a href="/images/Gallery/2.jpg"><img src="/images/Gallery/2.jpg" alt="work4"></a>
+                    <a href="/images/Gallery/6.jpg"><img src="/images/Gallery/6.jpg" alt="work5"></a>
+                    <a href="/images/Gallery/10.jpg"><img src="/images/Gallery/10.jpg" alt="work6"></a>
+                </div>
+            </div>
+
+            <div class="two-columns">
+                <div class="column">
+                    <a href="/images/Gallery/3.jpg"><img src="/images/Gallery/3.jpg" alt="work7"></a>
+                    <a href="/images/Gallery/7.jpg"><img src="/images/Gallery/7.jpg" alt="work8"></a>
+                    <a href="/images/Gallery/11.jpg"><img src="/images/Gallery/11.jpg" alt="work9"></a>
+                </div>
+
+                <div class="column">
+                    <a href="/images/Gallery/4.jpg"><img src="/images/Gallery/4.jpg" alt="work10"></a>
+                    <a href="/images/Gallery/8.jpg"><img src="/images/Gallery/8.jpg" alt="work11"></a>
+                    <a href="/images/Gallery/12.jpg"><img src="/images/Gallery/12.jpg" alt="work12"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
 </div>
 

@@ -33,11 +33,8 @@
 
 }
 
-#haircut-curved-750-250 {
-    display: none;
-}
 
-#haircut-curved-750-250-2 {
+#haircut-image {
     display: none;
 }
 
@@ -265,7 +262,7 @@
     }
 
     .right-side {
-        background-image: url("/images/haircut_curved_750_250.png");
+        background-image: url("/images/haircut.png");
 
         position: relative;
         width: 100%;

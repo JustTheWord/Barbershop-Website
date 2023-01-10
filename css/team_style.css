@@ -12,7 +12,7 @@
 }
 
 .barber-presenter {
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
@@ -41,8 +41,58 @@
     background-color: white;
 }
 
+#gallery {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#gallery > h2 {
+    margin: 0 auto;
+    color: rgb(240, 130, 0);
+    font-size: 40px;
+    padding: 20px;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.two-columns {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.column {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.column a img {
+    width: 300px ;
+    height: auto;
+
+    padding: 10px;
+    transition: 1s;
+}
+
+.column a img:hover {
+    transform: scale(1.1);
+}
+
+
 
 @media (max-width: 767px) {
+
     .presenters {
         padding-top: 200px;
         padding-bottom: 30px;

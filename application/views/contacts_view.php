@@ -31,8 +31,8 @@ declare(strict_types=1);
 
         <div class="contact-info">
             <h3>Schedule</h3>
-            <p>Po-Pá: 10:00 — 20:00</p>
-            <p>So: 10:00 — 18:00</p>
+            <p>Mon-Fri: 10:00 — 20:00</p>
+            <p>Sat: 10:00 — 18:00</p>
         </div>
 
         <a href = "https://www.facebook.com/barbershopfarian/" >
