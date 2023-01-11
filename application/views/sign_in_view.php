@@ -6,9 +6,40 @@ declare(strict_types=1);
 <body class="sign-in-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<div style="border: border: 4px solid white; padding: 16px 24px; color: wheat;"> HELE </div>
+<style> @import "../../css/signin_style.css"; </style>
 
+<div class="sign-in-container">
 
-</body>
+    <form>
+        <h2>Sign Up</h2>
+        <label for="name">Name and Surname:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Phone: (e.g. 773-980-395)</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="password_confirm">Confirm Password:</label>
+        <input type="password" id="password_confirm" name="password_confirm" required>
+        <br>
+        <label for="show-password">
+            <input type="checkbox" id="show-password" onchange="showPassword()"> Show Password
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+<script src="/js/"></script>
 
 <?php require __DIR__ . '/_footer.php' ?>
+</body>
