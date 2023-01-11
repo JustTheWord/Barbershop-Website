@@ -27,12 +27,21 @@ declare(strict_types=1);
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
+
+        <div class="show-password-container">
+            <label class="show-password-label" for="show-password">Show password</label>
+            <input type="checkbox" class="show-password" name="show-password" onclick="showPassword()">
+        </div>
+
+        <br>
+
         <label for="password_confirm">Confirm Password:</label>
         <input type="password" id="password_confirm" name="password_confirm" required>
         <br>
-        <label for="show-password">
-            <input type="checkbox" id="show-password" onchange="showPassword()"> Show Password
-        </label>
+        <div class="show-password-container">
+            <label class="show-password-label" for="show-password-confirm">Show password</label>
+            <input type="checkbox" class="show-password" name="show-password" onclick="showPassword()">
+        </div>
         <br>
         <input type="submit" value="Submit">
     </form>

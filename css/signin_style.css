@@ -44,6 +44,26 @@ form label {
     color: rgb(240, 130, 0);
 }
 
+form input[type=checkbox] {
+    width: 50px;
+    height: 20px;
+    /*margin: 5px 0 10px 0;*/
+    /*padding: 5px;*/
+    background: orange;
+    accent-color: rgb(240, 130, 0);
+}
+
+.show-password-container {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.show-password-label {
+    color: white;
+    padding-top: 5px;
+}
+
+
 form input[type="submit"] {
     width: 100%;
     background-color: rgb(150, 150, 150);
