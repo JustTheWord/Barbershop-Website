@@ -1,22 +1,14 @@
 @import "body_header_footer_style.css";
 
-.sign-in-container {
+.sign-up-container {
     width: 100%;
     max-width: 1500px;
-    padding-top: 200px;
+    padding-top: 140px;
     margin: 0 auto;
+
 }
 
-.sign-in-container form > h1 {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(240, 130, 0);
-    padding: 20px 0;
-}
-
-.sign-in-container form > h2 {
+.sign-up-container form > h2 {
     position: relative;
     margin: 0 auto;
     font-size: 35px;
@@ -25,11 +17,12 @@
 }
 
 form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%; /* make the form take up the full width of the screen */
+    max-width: 600px; /* set a maximum width for the form */
+    margin: 0 auto; /* center the form horizontally on the screen */
 }
 
+/* make the form fields take up the full width of the form container */
 form input,
 form textarea,
 form select {
@@ -87,47 +80,6 @@ form input[type="submit"]:hover {
     background-color: rgb(240, 130, 0);
 }
 
-.sign-up-link {
-    position: relative;
-    width: 100%;
-
-    padding: 100px 0 50px 0;
-    font-size: 20px;
-    color: rgb(240, 130, 0);
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.sign-up-link span {
-    position: relative;
-    width: 40%;
-    color: white;
-    padding: 14px 0
-}
-
-.sign-up-link a {
-    width: 40%;
-    background-color: black;
-    color: rgb(240, 130, 0);
-    padding: 14px 0;
-
-    text-align: center;
-    font-weight: bold;
-
-    border: 1px solid rgb(240, 130, 0);
-    border-radius: 4px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.sign-up-link a:hover {
-    border-color: black;
-    transition: 200ms;
-    transform: scale(1.05);
-}
-
 
 @media only screen and (max-width: 600px) {
     form {
@@ -137,9 +89,4 @@ form input[type="submit"]:hover {
     form input[type="submit"] {
         background-color: rgb(240, 130, 0);
     }
-
-    .sign-up-link {
-        padding-top: 50px;
-    }
 }
-

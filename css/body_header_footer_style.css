@@ -169,7 +169,7 @@ footer {
     background-color: black; /* Set the background color to dark grey */
     color: rgb(240, 130, 0); /* Set the text color to white */
     text-align: center; /* Center the text */
-    padding: 20px 0; /* Add some padding on the top and bottom */
+    padding: 20px 0 0 0; /* Add some padding on the top and bottom */
 }
 
 footer p {

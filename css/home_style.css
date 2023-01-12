@@ -168,8 +168,6 @@
     position: relative;
     width: 50%;
     height: auto;
-    /*max-width: 100%;*/
-    /*height: auto;*/
     border: 2px solid rgb(240, 130, 0, .8);
 }
 
@@ -209,8 +207,6 @@
 
     width: 60%;
     height: auto;
-    /*width: 420px;*/
-    /*height: 527px;*/
 }
 
 
