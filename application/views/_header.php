@@ -36,8 +36,8 @@ declare(strict_types=1);
                                     <span > Contacts</span >
                                 </a ></li >
 
-                            <li ><a class="sign-in" href = "http://localhost:8000/signin" >
-                                    <span > Sign - in</span >
+                            <li ><a class="sign-in" href = "http://localhost:8000/signin">
+                                    <span >Sign In</span >
                                 </a ></li >
 
                             <li >

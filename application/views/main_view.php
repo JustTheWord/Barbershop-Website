@@ -6,7 +6,7 @@
 <body class="main-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<style> @import "../../css/home_style.css"; </style>
+<link rel="stylesheet" href="../../css/home_style.css">
 
 <div class="home-container">
 

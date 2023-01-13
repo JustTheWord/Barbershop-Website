@@ -38,6 +38,14 @@
     display: none;
 }
 
+#greeting {
+    display: none;
+}
+
+#barbershop-name {
+    display: none;
+}
+
 
 #home-info {
     position: relative;
@@ -250,9 +258,11 @@
     }
 
     #greeting {
+        display: inline;
         font-size: 20px;
     }
     #barbershop-name {
+        display: inline;
         font-size: 30px;
         font-weight: bold;
     }

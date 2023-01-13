@@ -54,10 +54,16 @@ form label {
 form input[type=checkbox] {
     width: 50px;
     height: 20px;
-    /*margin: 5px 0 10px 0;*/
-    /*padding: 5px;*/
     background: orange;
     accent-color: rgb(240, 130, 0);
+}
+
+._error {
+    box-shadow:0 0 3px 6px rgb(240, 100, 0), 0 0 3px rgb(240, 100, 0);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
 }
 
 .show-password-container {

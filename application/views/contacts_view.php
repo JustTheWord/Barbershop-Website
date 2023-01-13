@@ -5,7 +5,7 @@ declare(strict_types=1);
 
 <body class="contacts-body">
 <?php require __DIR__ . '/_header.php' ?>
-<style> @import "../../css/contacts_style.css"; </style>
+<link rel="stylesheet" href="../../css/contacts_style.css">
 
 
 <div class="contacts-container">

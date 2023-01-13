@@ -6,17 +6,17 @@ declare(strict_types=1);
 <body class="sign-in-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<style> @import "../../css/signin_style.css"; </style>
+<link rel="stylesheet" href="../../css/signin_style.css">
 
 <div class="sign-in-container">
-<!--    action="/signin" method="post"-->
-    <form>
+
+    <form action="authentication" method="post" id="form-sign-in">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" class="email required" name="email" required>
         <br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" class="password required" name="password" required>
         <br>
         <div class="show-password-container">
             <label class="show-password-label" for="pass-checkbox">Show password</label>

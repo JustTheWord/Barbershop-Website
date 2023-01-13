@@ -6,7 +6,7 @@ declare(strict_types=1);
 <body class="services-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<style> @import "../../css/services_style.css"; </style>
+<link rel="stylesheet" href="../../css/services_style.css">
 
 <div class="services-container">
 

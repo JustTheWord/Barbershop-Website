@@ -29,7 +29,6 @@
 button {
     display: block;
     color: white;
-    /*opacity:.6;*/
     box-shadow:0 0 3px 6px rgb(240, 130, 0), 0 0 3px rgb(240, 130, 0);
     text-shadow:0 0 3px black;
     background: black;

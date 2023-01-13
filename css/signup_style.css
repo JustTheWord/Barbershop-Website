@@ -53,6 +53,14 @@ form input[type=checkbox] {
     accent-color: rgb(240, 130, 0);
 }
 
+._error {
+    box-shadow:0 0 3px 6px rgb(240, 100, 0), 0 0 3px rgb(240, 100, 0);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
+}
+
 .show-password-container {
     position: relative;
     display: flex;

@@ -8,9 +8,12 @@ const intervalId = setInterval(function typeWriter() {
 
 }, 60);
 
-
-console.log('Hello!');
 let textContainer = document.getElementById("barbershop-name");
 let index = 0;
 let text = 'Barbershop Farian';
-intervalId();
+
+if (textContainer.offsetHeight !== 0) {
+
+    intervalId();
+
+}

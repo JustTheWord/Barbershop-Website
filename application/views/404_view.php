@@ -2,7 +2,7 @@
 declare(strict_types=1);
 ?>
 
-<style> @import "../../css/error_style.css"; </style>
+<link rel="stylesheet" href="../../css/error_style.css">
 
 <body class="error-body">
 

@@ -7,7 +7,7 @@ declare(strict_types=1);
 
 <?php require __DIR__ . '/_header.php' ?>
 
-<style> @import "../../css/team_style.css"; </style>
+<link rel="stylesheet" href="../../css/team_style.css">
 
 <div class="team-container">
 
