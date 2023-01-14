@@ -1,0 +1,19 @@
+@import "body_header_footer_style.css";
+
+.account-container {
+    width: 100%;
+    max-width: 1500px;
+    padding-top: 200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.account-container > h1 {
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(240, 130, 0);
+}

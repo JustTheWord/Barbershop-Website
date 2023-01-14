@@ -8,21 +8,20 @@
 
 }
 
-.sign-up-container form > h2 {
+.sign-up-container form > h1 {
     position: relative;
-    margin: 0 auto;
-    font-size: 35px;
-    color: rgb(240, 130, 0);
-    padding: 20px 0;
+    text-align: left;
+    font-size: 18px;
+    color: crimson;
 }
 
 form {
-    width: 100%; /* make the form take up the full width of the screen */
-    max-width: 600px; /* set a maximum width for the form */
-    margin: 0 auto; /* center the form horizontally on the screen */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* make the form fields take up the full width of the form container */
+
 form input,
 form textarea,
 form select {

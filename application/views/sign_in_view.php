@@ -12,9 +12,24 @@ declare(strict_types=1);
 
     <form action="authentication" method="post" id="form-sign-in">
 
+        <?php
+        if (isset($emailError) && !empty($emailError)) {
+            ?>
+            <h1 id="form-email-error"><?= $emailError ?></h1>
+            <?php
+        }
+        ?>
         <label for="email">Email:</label>
-        <input type="email" id="email" class="email required" name="email" required>
+        <input type="email" id="email" class="email required" name="email"
+               value="<?php  if( isset($emailValue)) echo "$emailValue";?>" required>
         <br>
+        <?php
+        if (isset($passError) && !empty($passError)) {
+            ?>
+            <h1 id="form-pass-error"><?= $passError; ?></h1>
+            <?php
+        }
+        ?>
         <label for="password">Password:</label>
         <input type="password" id="password" class="password required" name="password" required>
         <br>

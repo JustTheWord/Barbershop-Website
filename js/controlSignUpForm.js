@@ -80,3 +80,33 @@ document.addEventListener('DOMContentLoaded', function () {
         return !/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/.test(input.value);
     }
 })
+
+// delete Name form error after click on the field
+const nameField = document.getElementById('name');
+const nameFormError = document.getElementById('form-name-error');
+nameField.addEventListener("click", function () { nameFormError.style.display = 'none'; })
+
+// delete Email form error after click on the field
+const emailField = document.getElementById('email');
+const emailFormError = document.getElementById('form-email-error');
+emailField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+
+// delete Phone error form after click on the field
+const phoneField = document.getElementById('phone');
+const phoneFormError = document.getElementById('form-phone-error');
+phoneField.addEventListener("click", function () { phoneFormError.style.display = 'none'; })
+
+// delete Birthday form error after click on the field
+const dateField = document.getElementById('birthday');
+const dateFormError = document.getElementById('form-data-error');
+dateField.addEventListener("click", function () { dateFormError.style.display = 'none'; })
+
+// delete Password form error after click on the field
+const passSignUpField = document.getElementById('password-signup');
+const passSignUpFormError = document.getElementById('form-pass-error');
+passSignUpField.addEventListener("click", function () { passSignUpFormError.style.display = 'none'; })
+
+// delete Password Confirmation form error after click on the field
+const passConfirmField = document.getElementById('password_confirm_signup');
+const passConfirmFormError = document.getElementById('form-confirm-pass-error');
+passConfirmField.addEventListener("click", function () { passConfirmFormError.style.display = 'none'; })

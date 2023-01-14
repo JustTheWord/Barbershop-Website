@@ -13,13 +13,14 @@ class View
     function generate($content_view, $template_view, $data = null)
     {
 
-        /*
-        if(is_array($data)) {
+//        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+//        header('Location:'.$host.'account');
 
-            // преобразуем элементы массива в переменные
+
+        if (is_array($data))
+        {
             extract($data);
         }
-        */
 
         /*
         динамически подключаем общий шаблон (вид),

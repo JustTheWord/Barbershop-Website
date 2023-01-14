@@ -81,7 +81,7 @@ class Route
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <link rel="stylesheet" href="/css/body_header_footer_style.css">
+<!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
 
 </html>

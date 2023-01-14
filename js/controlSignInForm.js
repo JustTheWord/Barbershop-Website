@@ -65,3 +65,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 })
+
+const emailField = document.getElementById('email');
+const emailFormError = document.getElementById('form-email-error');
+emailField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+
+const passField = document.getElementById('password');
+const passFormError = document.getElementById('form-pass-error');
+passField.addEventListener("click", function () { passFormError.style.display = 'none'; })

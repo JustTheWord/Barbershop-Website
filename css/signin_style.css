@@ -9,19 +9,9 @@
 
 .sign-in-container form > h1 {
     position: relative;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 30px;
-    color: rgb(240, 130, 0);
-    padding: 20px 0;
-}
-
-.sign-in-container form > h2 {
-    position: relative;
-    margin: 0 auto;
-    font-size: 35px;
-    color: rgb(240, 130, 0);
-    padding: 20px 0;
+    text-align: left;
+    font-size: 18px;
+    color: crimson;
 }
 
 form {
