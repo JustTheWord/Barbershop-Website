@@ -60,6 +60,26 @@ class Model_DB extends Model
         die();
     }
 
+    public function getClientsVisitHistory($clientsEmail): ?array
+    {
+        if ($this->pdo)
+        {
+            $query = 'SELECT * FROM Appointment WHERE clients_email=?';
+            $statement = $this->pdo->prepare($query);
+            $statement->execute(array($clientsEmail));
+            $dbResponse = $statement->fetchAll();
+
+            if (is_array($dbResponse))
+                return  $dbResponse;
+
+            else
+                return  null;
+        }
+
+        echo "The problem with database connection.";
+        die();
+    }
+
     public function addNewClient(array $data): bool
     {
         if ($this->pdo)

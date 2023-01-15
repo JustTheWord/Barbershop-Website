@@ -1,13 +1,21 @@
 <?php
+require_once 'controller_authentication.php';
 
-class Controller_Account extends Controller
+class Controller_Account extends Controller_Authentication
 {
     function action_index()
     {
-        if (!empty($_SESSION["userId"]))
+        if (!empty($_SESSION["email"]))
         {
+            $_SESSION['visitHistory'] = array_reverse($this->model->getClientsVisitHistory($_SESSION["email"]));
             include(__DIR__ . "/../views/account_view.php");
         }
+
+        else if (!empty($_GET['p']))
+        {
+
+        }
+
         else
         {
             $host = 'http://'.$_SERVER['HTTP_HOST'].'/';

@@ -15,7 +15,7 @@ CREATE TABLE Clients
 
     name VARCHAR(255) NULL,
     phone_num VARCHAR(9) NOT NULL,
-    birthday DATE NOT NULL, 
+    birthday DATE NOT NULL,
     password VARCHAR(127) NOT NULL
 );
 
