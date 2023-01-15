@@ -15,8 +15,7 @@ class ErrorHandler
             'phoneValue' => '',
             'dateError' => '',
             'dateValue' => '',
-            'repeatPassError' => '',
-            );
+            'repeatPassError' => '');
     }
 
     public function controlForm($allPostVariables)

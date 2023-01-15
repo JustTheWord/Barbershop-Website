@@ -37,18 +37,16 @@ class Controller_Register extends Controller
                 include_once 'application/models/model_users.php';
                 $model = new Model_Users;
 
-                foreach ($model->get_data() as $user)
+                $clientsData = $model->getClientsData($email);
+
+                if ($clientsData && $clientsData['password'] === $password)
                 {
-
-                    if ($user['email'] === $email &&
-                        $user['password'] === $password)
-                    {
-
-                        $this->view->generate('', 'account_view.php',
-                            array(1 => $user['email'], 2 => $user['password']));
-
-                        break;
-                    }
+                    $this->view->generate('', 'account_view.php',
+                        array('email' => $email));
+                }
+                else
+                {
+                    echo "DATABASE HAS SEND A SHIT";
                 }
             }
         }
