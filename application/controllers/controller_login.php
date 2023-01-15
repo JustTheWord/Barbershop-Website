@@ -28,15 +28,7 @@ class Controller_Login extends Controller_Authentication
 
                     if (password_verify($saltedPassword, $clientsData['password']))
                     {
-
-//                        session_start();
-                        session_regenerate_id(true);
-                        setcookie(session_name(), session_id(), time() + (60*2));
-                        $_SESSION['userId'] = session_id();
-                        $_SESSION['email'] = $email;
-
-                        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-                        header('Location:'.$host.'account');
+                        $this->successfulSignIn($this->model->getClientsData($email));
                     }
                     else
                     {

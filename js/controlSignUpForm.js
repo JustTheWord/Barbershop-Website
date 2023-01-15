@@ -1,5 +1,6 @@
 'use strict'
 
+// make show-password checkbox show password in plain text
 const passCheckbox = document.getElementById('pass-checkbox_signup');
 const pass = document.getElementById('password-signup');
 const passConfirm = document.getElementById('password_confirm_signup');
@@ -15,7 +16,7 @@ passCheckbox.addEventListener('change', function () {
     }
 })
 
-
+// JavaScript client-side sign-up form validation
 document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('form-sign-up');

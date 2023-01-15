@@ -63,7 +63,7 @@ declare(strict_types=1);
                             if (isset($_SESSION['userId']) && !empty($_SESSION['userId'])) {
                                 ?>
                                 <li>
-                                    <a class="logout" href = "http://localhost:8000" >
+                                    <a class="sign-out" href = "http://localhost:8000/signout" >
                                         <span>Sign out</span >
                                     </a>
                                 </li >
@@ -71,11 +71,6 @@ declare(strict_types=1);
                             }
                             ?>
 
-                            <li >
-                                <a href = "http://localhost:8000/404" >
-                                    <img id = "cz_flag" src = "/images/cz.svg" alt = "flag" >
-                                </a >
-                            </li >
                         </ul >
                     </nav >
                 </div>

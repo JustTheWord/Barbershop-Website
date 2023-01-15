@@ -59,9 +59,7 @@ class Controller_Register extends Controller_Authentication
                     }
                     else
                     {
-                        echo "SUCCESSFUL";
-                        session_start();
-
+                        $this->successfulSignIn($this->model->getClientsData($email));
                     }
                 }
             }

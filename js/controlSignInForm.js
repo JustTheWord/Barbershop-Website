@@ -1,5 +1,6 @@
 'use strict'
 
+// make show-password checkbox show password in plain text
 const passCheckbox = document.getElementById('pass-checkbox');
 const pass = document.getElementById('password');
 const passConfirm = document.getElementById('password_confirm');
@@ -15,7 +16,7 @@ passCheckbox.addEventListener('change', function () {
     }
 })
 
-
+// JavaScript client-side sign-in form validation
 document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('form-sign-in');
@@ -66,10 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
+// delete Email form error after click on the field
 const emailField = document.getElementById('email');
 const emailFormError = document.getElementById('form-email-error');
 emailField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
 
+// delete Password form error after click on the field
 const passField = document.getElementById('password');
 const passFormError = document.getElementById('form-pass-error');
 passField.addEventListener("click", function () { passFormError.style.display = 'none'; })

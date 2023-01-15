@@ -44,3 +44,25 @@ function onMenuLinkClick(event) {
         event.preventDefault();
     }
 }
+
+// events for 'BOOK NOW' button to send to the booking form the selected service
+document.getElementById('haircut&fade').addEventListener("click", onButtonLinkClick);
+document.getElementById('haircut&shave').addEventListener("click", onButtonLinkClick);
+document.getElementById('haircut&beard').addEventListener("click", onButtonLinkClick);
+document.getElementById('haircut&long').addEventListener("click", onButtonLinkClick);
+document.getElementById('long&beard').addEventListener("click", onButtonLinkClick);
+document.getElementById('father&son').addEventListener("click", onButtonLinkClick);
+
+function onButtonLinkClick(event) {
+    // each service is associated to the index number it is in the dropdown menu
+    // for more see bookNowService.js file
+    const services = {
+        "haircut&fade" : '0',
+        "haircut&shave": '1',
+        "haircut&beard": '2',
+        "haircut&long": '3',
+        "long&beard": '4',
+        "father&son": '5'
+    }
+    window.localStorage.setItem('index', services[event.target.id]);
+}

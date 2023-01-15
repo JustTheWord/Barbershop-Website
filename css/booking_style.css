@@ -1,0 +1,99 @@
+@import "body_header_footer_style.css";
+
+.booking-container {
+    width: 100%;
+    max-width: 1500px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.booking-container form > h1 {
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    color: crimson;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+    font-size: 18px
+}
+#service-price {
+    font-size: 25px;
+    color: rgb(240, 130, 0);
+    text-align: center;
+    border: 1px solid rgb(240, 130, 0);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+    color: rgb(240, 130, 0);
+}
+
+form input[type=checkbox] {
+    width: 50px;
+    height: 20px;
+    background: orange;
+    accent-color: rgb(240, 130, 0);
+}
+
+._error {
+    box-shadow:0 0 3px 6px rgb(240, 100, 0), 0 0 3px rgb(240, 100, 0);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(240, 130, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    form input[type="submit"] {
+        background-color: rgb(240, 130, 0);
+    }
+
+    .sign-up-link {
+        padding-top: 50px;
+    }
+}
+

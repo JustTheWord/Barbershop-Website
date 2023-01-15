@@ -37,7 +37,7 @@ declare(strict_types=1);
                 <h3>Barber: 350-600</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="haircut&fade">BOOK NOW</button>
                 </a>
             </div>
 
@@ -53,7 +53,7 @@ declare(strict_types=1);
                 <h3>Barber: 350-600</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="haircut&shave">BOOK NOW</button>
                 </a>
             </div>
 
@@ -68,7 +68,7 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 500-900</h3>
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="haircut&beard">BOOK NOW</button>
                 </a>
             </div>
 
@@ -84,7 +84,7 @@ declare(strict_types=1);
                 <h3>Barber: 400-650</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="haircut&long">BOOK NOW</button>
                 </a>
             </div>
 
@@ -100,7 +100,7 @@ declare(strict_types=1);
                 <h3>Barber: 550-950</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="long&beard">BOOK NOW</button>
                 </a>
             </div>
 
@@ -115,7 +115,7 @@ declare(strict_types=1);
                 <h3>Barber: 650-1000</h3>
 
                 <a href="http://localhost:8000/booking">
-                    <button class="book-now">BOOK NOW</button>
+                    <button class="book-now" id="father&son">BOOK NOW</button>
                 </a>
             </div>
 

@@ -13,4 +13,22 @@ class Controller_Authentication extends Controller
         $this->authError = new ErrorHandler();
         $this->model = new Model_Users;
     }
+
+
+    public function successfulSignIn(?array $clientsData) {
+
+        if ($clientsData)
+        {
+            session_regenerate_id(true);
+            setcookie(session_name(), session_id(), time() + (60 * 60 * 24));
+
+            $_SESSION['userId'] = session_id();
+            $_SESSION['email'] = $clientsData['email'];
+            $_SESSION['name'] = $clientsData['name'];
+            $_SESSION['phone'] = $clientsData['phone_num'];
+
+            $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+            header('Location:'.$host.'account');
+        }
+    }
 }
