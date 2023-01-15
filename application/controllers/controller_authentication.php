@@ -1,17 +1,21 @@
 <?php
 require_once 'application/core/errorHandler.php';
-require_once 'application/models/model_users.php';;
+require_once 'application/models/model_db.php';
+require_once 'application/models/model_price.php';
 class Controller_Authentication extends Controller
 {
     public string $saltStart = 'qm&h*';
     public string $saltEnd = 'pg!@';
     public ?ErrorHandler $authError = null;
+    public $model;
+    public Model_Price $modelPrices;
 
     function __construct()
     {
         parent::__construct();
         $this->authError = new ErrorHandler();
-        $this->model = new Model_Users;
+        $this->model = new Model_DB();
+        $this->modelPrices = new Model_Price();
     }
 
 

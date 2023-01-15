@@ -2,7 +2,6 @@
 declare(strict_types=1);
 ?>
 
-
 <body class="sign-in-body">
 
 <?php require __DIR__ . '/_header.php' ?>
@@ -55,7 +54,7 @@ declare(strict_types=1);
         }
         ?>
         <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" class="date required" name="birthday"
+        <input type="date" id="birthday" class="date required" name="date"
                value="<?php  if( isset($dateValue)) echo "$dateValue";?>" required>
         <br>
         <?php

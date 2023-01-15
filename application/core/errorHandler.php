@@ -15,6 +15,7 @@ class ErrorHandler
             'phoneValue' => '',
             'dateError' => '',
             'dateValue' => '',
+            'timeError' => '',
             'repeatPassError' => '');
     }
 
@@ -68,15 +69,15 @@ class ErrorHandler
                     }
                     break;
 
-                case 'birthday':
-                    $birthday = $val;
-                    $this->formErrors['dateValue'] = $birthday;
+                case 'date':
+                    $date = $val;
+                    $this->formErrors['dateValue'] = $date;
 
-                    if (preg_match("/^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$/", $birthday))
+                    if (preg_match("/^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$/", $date))
                     {
-                        $date = explode('-', $birthday);
+                        $arrDate = explode('-', $date);
 
-                        if (!checkdate((int)$date[1], (int)$date[2], (int)$date[0])) { // month, day, year
+                        if (!checkdate((int)$arrDate[1], (int)$arrDate[2], (int)$arrDate[0])) { // month, day, year
                             $noErrors = false;
                             $this->formErrors['dateError'] = "This date doesn't exist";
                         }
@@ -85,6 +86,24 @@ class ErrorHandler
                     {
                         $noErrors = false;
                         $this->formErrors['dateError'] = "Invalid birthday date format.";
+                    }
+                    break;
+
+                case 'time':
+                    $time = $val;
+                    $this->formErrors['timeValue'] = $time;
+
+                    if (preg_match("/^[0-2][0-9]:[0-5][0-9]$/", $time))
+                    {
+                        if (!("10:00" < $time && $time < "20:00")) {
+                            $noErrors = false;
+                            $this->formErrors['timeError'] = "The time is outside of the working hours.";
+                        }
+                    }
+                    else
+                    {
+                        $noErrors = false;
+                        $this->formErrors['dateError'] = "Invalid time format.";
                     }
                     break;
 
