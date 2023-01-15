@@ -22,30 +22,60 @@ declare(strict_types=1);
 
                             <li ><a class="home" href = "http://localhost:8000" >
                                     <span > Home</span >
-                                </a></li >
+                                </a>
+                            </li >
 
                             <li ><a class="services" href = "http://localhost:8000/services" >
                                     <span > Services</span >
-                                </a ></li >
+                                </a >
+                            </li >
 
                             <li ><a class="team" href = "http://localhost:8000/team" >
                                     <span > Team</span >
-                                </a ></li >
+                                </a >
+                            </li >
 
                             <li ><a class="contacts" href = "http://localhost:8000/contacts" >
                                     <span > Contacts</span >
-                                </a ></li >
+                                </a >
+                            </li >
 
-                            <li ><a class="sign-in" href = "http://localhost:8000/signin">
-                                    <span >Sign In</span >
-                                </a ></li >
+                            <li >
+                                    <?php
+                                    if (isset($_SESSION['userId']) && !empty($_SESSION['userId'])) {
+                                        ?>
+                                        <a class="sign-in" href = "http://localhost:8000/account">
+                                        <span>Account</span>
+                                        </a >
+                                        <?php
+                                    }
+                                    else {
+                                        ?>
+                                        <a class="sign-in" href = "http://localhost:8000/signin">
+                                        <span >Sign In</span >
+                                        </a >
+                                        <?php
+                                    }?>
+
+                            </li >
+
+                            <?php
+                            if (isset($_SESSION['userId']) && !empty($_SESSION['userId'])) {
+                                ?>
+                                <li>
+                                    <a class="logout" href = "http://localhost:8000" >
+                                        <span>Sign out</span >
+                                    </a>
+                                </li >
+                                <?php
+                            }
+                            ?>
 
                             <li >
                                 <a href = "http://localhost:8000/404" >
                                     <img id = "cz_flag" src = "/images/cz.svg" alt = "flag" >
                                 </a >
                             </li >
-
                         </ul >
                     </nav >
                 </div>

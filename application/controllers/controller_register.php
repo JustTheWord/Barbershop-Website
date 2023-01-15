@@ -1,6 +1,6 @@
 <?php
-require_once 'application/core/errorHandler.php';
-class Controller_Register extends Controller
+require_once 'controller_authentication.php';
+class Controller_Register extends Controller_Authentication
 {
     function action_index()
     {
@@ -17,12 +17,9 @@ class Controller_Register extends Controller
             $birthday = htmlspecialchars($_POST["birthday"], ENT_QUOTES, 'UTF-8');
             $password = htmlspecialchars($_POST["password"], ENT_QUOTES, 'UTF-8');
             $passConfirm = htmlspecialchars($_POST["password_confirm"], ENT_QUOTES, 'UTF-8');
-
-            $signInError = new ErrorHandler();
-
             $passwordsTheSame = $password === $passConfirm;
 
-            $feedback = $signInError->controlForm(
+            $feedback = $this->authError->controlForm(
                 array('name' => $name, 'email' => $email, 'phone'=>$phone,
                 'birthday' => $birthday, 'password' => $password, 'passwordsConfirm' => $passwordsTheSame)
             );
@@ -34,19 +31,38 @@ class Controller_Register extends Controller
             // server side validation is successful
             else
             {
-                include_once 'application/models/model_users.php';
-                $model = new Model_Users;
+                $clientsData = $this->model->getClientsData($email);
 
-                $clientsData = $model->getClientsData($email);
-
-                if ($clientsData && $clientsData['password'] === $password)
+                if ($clientsData)
                 {
-                    $this->view->generate('', 'account_view.php',
-                        array('email' => $email));
+                    $this->view->generate('', 'sign_up_view.php',
+                        array('emailValue' => $email, 'nameValue' => $name,
+                            'phoneValue' => $phone, 'dateValue' => $birthday,
+                            'emailError' => 'This email is already registered. Sign in, please.'));
                 }
-                else
+                else // this email is not registered
                 {
-                    echo "DATABASE HAS SEND A SHIT";
+                    $saltedPassword = $this->saltStart . $password . $this->saltEnd;
+                    $hashedPassword = password_hash($saltedPassword, PASSWORD_BCRYPT);
+                    $phone = implode(preg_split('/[- ]/', $phone));
+
+                    $dbResponse = $this->model->addNewClient(array(
+                        $email, $name, $phone, $birthday, $hashedPassword)
+                    );
+
+                    if (!$dbResponse)
+                    {
+                        $this->view->generate('', 'sign_up_view.php',
+                            array('emailValue' => $email, 'nameValue' => $name,
+                                'phoneValue' => $phone, 'dateValue' => $birthday,
+                                'emailError' => 'Sorry, we cannot sign up you. Try a bit later, please.'));
+                    }
+                    else
+                    {
+                        echo "SUCCESSFUL";
+                        session_start();
+
+                    }
                 }
             }
         }

@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 <div class="sign-in-container">
 
-    <form action="authentication" method="post" id="form-sign-in">
+    <form action="login" method="post" id="form-sign-in">
 
         <?php
         if (isset($emailError) && !empty($emailError)) {

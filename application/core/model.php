@@ -45,11 +45,32 @@ class Model
     {
         if ($this->pdo)
         {
-            $statement = $this->pdo->query("SELECT * FROM Clients WHERE email=?");
+            $statement = $this->pdo->prepare("SELECT * FROM Clients WHERE email=?");
             $statement->execute(array($clientsEmail));
-            return $statement->fetch();
+            $dbResponse = $statement->fetch();
+
+            if (is_array($dbResponse))
+                return  $dbResponse;
+
+            else
+                return  null;
         }
-        return null;
+
+        echo "The problem with database connection.";
+        die();
+    }
+
+    public function addNewClient(array $data): bool
+    {
+        if ($this->pdo)
+        {
+            $query = 'INSERT INTO Clients (email, name, phone_num, birthday, password) VALUES (?,?,?,?,?)';
+            $statement = $this->pdo->prepare($query);
+
+            return $statement->execute($data);
+        }
+
+        echo "The problem with database connection.";
+        die();
     }
 }
-?>

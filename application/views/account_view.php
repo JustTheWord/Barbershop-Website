@@ -8,8 +8,7 @@ declare(strict_types=1);
 <link rel="stylesheet" href="../../css/account_style.css">
 
 <div class="account-container">
-    <h1><?php if(isset($email)) echo $email ?></h1>
-
+    <h1><?php if (isset($_SESSION['email'])) echo $_SESSION['email']; ?></h1>
 </div>
 
 <?php require __DIR__ . '/_footer.php' ?>

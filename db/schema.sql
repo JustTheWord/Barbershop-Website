@@ -40,14 +40,14 @@ ALTER TABLE Appointment ADD
 
 # -- ---------------------------------- INSERT THE DATA ----------------------------------
 
-INSERT INTO barbershop.Clients (email, name, phone_num, birthday, password)
-VALUES ('grebegor@bk.ru', 'Yegor Greb', '773945394', '1998-09-06', 'qwerty');
-
-INSERT INTO barbershop.Clients (email, name, phone_num, birthday, password)
-VALUES ('klient1@seznam.cz', 'John Soer', '773945876', '1989-12-08', 'klient1');
-
-INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
-VALUES ('2022-10-31 13:00:00',  'grebegor@bk.ru', 'Yegor', 'Farhad', 'Strih', 600);
-
-INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
-VALUES ('2022-11-01 10:00:00',  'klient1@seznam.cz', 'Jiri', 'Petr', 'Strih a uces', 800);
+-- INSERT INTO barbershop.Clients (email, name, phone_num, birthday, password)
+-- VALUES ('grebegor@bk.ru', 'Yegor Greb', '773945394', '1998-09-06', 'qwerty'); -- ATTENTION: PASSWORD ISN'T SALTED
+--
+-- INSERT INTO barbershop.Clients (email, name, phone_num, birthday, password)
+-- VALUES ('klient1@seznam.cz', 'John Soer', '773945876', '1989-12-08', 'klient1'); -- ATTENTION: PASSWORD ISN'T SALTED
+--
+-- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
+-- VALUES ('2022-10-31 13:00:00',  'grebegor@bk.ru', 'Yegor', 'Farhad', 'Strih', 600);
+--
+-- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
+-- VALUES ('2022-11-01 10:00:00',  'klient1@seznam.cz', 'Jiri', 'Petr', 'Strih a uces', 800);
