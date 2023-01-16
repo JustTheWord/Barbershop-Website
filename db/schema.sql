@@ -52,37 +52,37 @@ CREATE TABLE Appointment
 -- VALUES ('2022-10-31 13:00:00',  'grebegor@bk.ru', 'Yegor', 'Farhad', 'Long Hair & Beard ', 600);
 --
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-01-01 10:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
+-- VALUES ('2023-01-01 10:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
 
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-01-27 12:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-01-27 12:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-02-03 11:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-02-03 11:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-02-24 16:30:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-02-24 16:30:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-03-13 17:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-03-13 17:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-03-27 13:30:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-03-27 13:30:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-04-10 15:45:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-04-10 15:45:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-04-22 10:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-04-22 10:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-05-05 18:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-05-05 18:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-05-23 13:30:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-05-23 13:30:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-06-10 11:00:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
-
+-- VALUES ('2023-06-10 11:00:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);
+--
 -- INSERT INTO barbershop.Appointment(appoint_date, clients_email, name, barber, service, price)
--- VALUES ('2023-06-27 14:30:00',  'klient1@seznam.cz', 'Jiri', 'Kirill', 'Haircut', 800);
+-- VALUES ('2023-06-27 14:30:00',  'helloWorld@gmail.com', 'Jiri', 'Kirill', 'Haircut', 800);

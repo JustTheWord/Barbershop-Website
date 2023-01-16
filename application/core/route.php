@@ -10,11 +10,22 @@ class Route
         $action_name = 'index';
 
         $routes = explode('/', $_SERVER['REQUEST_URI']);
-
         // gets controller name
-        if ( !empty($routes[1]) )
-        {
-            $controller_name = $routes[1];
+        if (!empty($routes[1])) {
+
+            if (strpos($routes[1], '?page=') !== false)
+            {
+                $routeWithGetParam = explode('?page=', $routes[1]);
+                $controller_name = $routeWithGetParam[0];
+                $pageNumber = $routeWithGetParam[1];
+                // only allowed get param for pagination pages
+                if (preg_match("/^[0-9]*$/", $pageNumber)) {
+                    $_SESSION['page'] = $pageNumber;
+                }
+            } else {
+                $controller_name = $routes[1];
+            }
+
         }
 
         // action name

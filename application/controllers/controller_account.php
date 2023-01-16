@@ -11,11 +11,6 @@ class Controller_Account extends Controller_Authentication
             include(__DIR__ . "/../views/account_view.php");
         }
 
-        else if (!empty($_GET['p']))
-        {
-
-        }
-
         else
         {
             $host = 'http://'.$_SERVER['HTTP_HOST'].'/';

@@ -23,7 +23,7 @@ declare(strict_types=1);
     </div>
 
     <?php
-    $page = $_SESSION['page'] ?? 0;
+    $page = isset($_SESSION['page']) ?  (int)$_SESSION['page'] : 0;
     $visitsPerPage = 4;
     $visits = $_SESSION['visitHistory'];
 
@@ -67,7 +67,7 @@ declare(strict_types=1);
             <?php
             for ($p=0; $p < $pageCount; $p++) { ?>
 
-            <a href="<?php $_SESSION['page'] = $p?>http://localhost:8000/account">
+            <a href="http://localhost:8000/account?page=<?php echo $p?>">
                 <button class="page-button"><?php echo $p + 1; ?></button>
             </a>
 
