@@ -67,12 +67,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
+// remove error lightning from the form field after clicking on it
+const fieldsWithErrors = document.querySelectorAll('.required');
+
+if (fieldsWithErrors.length > 0) {
+
+    fieldsWithErrors.forEach(field => {
+        field.addEventListener('click', function () {
+            if (field.classList.contains('_error')) {
+                field.classList.remove('_error');
+            }
+        })
+    })
+}
+
 // delete Email form error after click on the field
 const emailField = document.getElementById('email');
 const emailFormError = document.getElementById('form-email-error');
-emailField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+if (emailFormError) {
+    emailField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+}
 
 // delete Password form error after click on the field
 const passField = document.getElementById('password');
 const passFormError = document.getElementById('form-pass-error');
-passField.addEventListener("click", function () { passFormError.style.display = 'none'; })
+if (passFormError) {
+    passField.addEventListener("click", function () { passFormError.style.display = 'none'; })
+}
