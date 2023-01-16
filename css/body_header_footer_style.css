@@ -93,15 +93,6 @@ a:hover {
     transition:200ms;
 }
 
-
-#cz_flag {
-    float: left;
-    width: 40px;
-    height: 25px;
-    padding: 0 20px;
-}
-
-
 body.main-body .header-list li a.home {
     color: white;
     font-size: 100%;
@@ -228,8 +219,6 @@ footer p {
         background-color: black;
         border-bottom: 1px solid rgb(240, 130, 0);
         z-index: 10;
-        /*gap: 1rem;*/
-        /*padding-bottom: 1rem;*/
         width: 100%;
     }
 
@@ -241,8 +230,6 @@ footer p {
         align-content: center;
         flex-flow: column wrap;
         font-size: 30px;
-        /*justify-content: space-around;*/
-        /*align-items: center;*/
     }
 
 
@@ -250,15 +237,6 @@ footer p {
         margin-right: 0;
         padding: 0 0 20px 0;
     }
-
-
-    #cz_flag {
-        float: left;
-        width: 45px;
-        height: 35px;
-        padding: 10px 20px;
-    }
-
 
     .header-menu li a.sign-in {
         padding: 0 0 0 0;
@@ -273,4 +251,58 @@ footer p {
     footer {
         margin-top: 0;
     }
+}
+
+@media (max-height: 428px) {
+
+    .header-body {
+        height: 130px;
+    }
+
+
+    .header-container {
+        padding: 0;
+    }
+
+    .header-menu {
+        display: none;
+        top: 130px;
+    }
+
+    .header-logo img {
+        width: 35%;
+        padding: 10px 0 0 10px;
+
+    }
+
+    .header-list {
+        font-size: 1.3rem;
+    }
+
+    .header-list li {
+        padding: 0 0 15px 0;
+    }
+}
+
+
+@media (max-height: 375px) {
+
+    .header-body {
+        height: 115px;
+    }
+
+    .header-menu {
+        top: 115px;
+    }
+
+    .header-logo img {
+        width: 35%;
+        padding: 15px 0 0 10px;
+
+    }
+
+    .header-list li {
+        padding: 0 0 10px 0;
+    }
+
 }

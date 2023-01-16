@@ -2,6 +2,16 @@
 declare(strict_types=1);
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbershop</title>
+    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
+</head>
+
 <?php require __DIR__ . '/_header.php' ?>
 <link rel="stylesheet" href="../../css/booked_style.css">
 
@@ -23,3 +33,4 @@ declare(strict_types=1);
 
 <?php require __DIR__ . '/_footer.php' ?>
 </body>
+</html>

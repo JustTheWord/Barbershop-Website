@@ -70,7 +70,6 @@ declare(strict_types=1);
                                 <?php
                             }
                             ?>
-
                         </ul >
                     </nav >
                 </div>

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 require_once 'application/core/errorHandler.php';
 require_once 'application/models/model_db.php';
 require_once 'application/models/model_price.php';

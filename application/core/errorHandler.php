@@ -111,7 +111,7 @@ class ErrorHandler
                     $phone = $val;
                     $this->formErrors['phoneValue'] = $phone;
 
-                    if (!preg_match("/^[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{3}$/", $phone))
+                    if (!preg_match("/^[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{3}|[0-9]{3}[0-9]{3}[0-9]{3}$/", $phone))
                     {
                         $noErrors = false;
                         $this->formErrors['phoneError'] = "Invalid phone number format.";

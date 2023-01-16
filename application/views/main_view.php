@@ -3,6 +3,16 @@
  ?>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbershop</title>
+    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
+</head>
+
+
 <body class="main-body">
 
 <?php require __DIR__ . '/_header.php' ?>
@@ -69,8 +79,8 @@
         </div>
 
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hg0yW9QkZ8g" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <iframe  src="https://www.youtube.com/embed/hg0yW9QkZ8g"
+                    allowfullscreen>
             </iframe>
         </div>
 
@@ -111,3 +121,5 @@
 
 <?php require __DIR__ . '/_footer.php' ?>
 </body>
+
+</html>

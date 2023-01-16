@@ -3,6 +3,17 @@ declare(strict_types=1);
 ?>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbershop</title>
+    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
+</head>
+
+
+
 <body class="contacts-body">
 <?php require __DIR__ . '/_header.php' ?>
 <link rel="stylesheet" href="../../css/contacts_style.css">
@@ -46,14 +57,13 @@ declare(strict_types=1);
 
     </div>
 
-    <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1279.9952536468895!2d14.447408676095748!3d50.08646459483149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95e680943063%3A0x95e4f69c9dfc99db!2sFARIAN%20BARBERSHOP%20Holi%C4%8Dstvi!5e0!3m2!1sen!2sus!4v1673271703162!5m2!1sen!2sus'
-            width="600"
-            height="450"
-            frameborder="0"
-            allowfullscreen>
-    </iframe>
+    <div class="map-container">
+        <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1279.9952536468895!2d14.447408676095748!3d50.08646459483149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95e680943063%3A0x95e4f69c9dfc99db!2sFARIAN%20BARBERSHOP%20Holi%C4%8Dstvi!5e0!3m2!1sen!2sus!4v1673271703162!5m2!1sen!2sus'></iframe>
+    </div>
+
 </div>
 
 <?php require __DIR__ . '/_footer.php' ?>
 </body>
+
+</html>

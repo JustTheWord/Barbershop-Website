@@ -3,6 +3,16 @@ declare(strict_types=1);
 ?>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbershop</title>
+    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
+</head>
+
+
 <body class="services-body">
 
 <?php require __DIR__ . '/_header.php' ?>
@@ -34,7 +44,7 @@ declare(strict_types=1);
                 <h2 class="name">Haircut</h2>
                 <h5 class="annotation">Fade, Crop atd</h5>
                 <br>
-                <h3>Barber: 350-600</h3>
+                <h3>Barber: 550-600</h3>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now" id="haircut&fade">BOOK NOW</button>
@@ -50,7 +60,7 @@ declare(strict_types=1);
                 <h2 class="name">Haircut &</h2>
                 <h2 class="name">Shave</h2>
                 <br>
-                <h3>Barber: 350-600</h3>
+                <h3>Barber: 800-900</h3>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now" id="haircut&shave">BOOK NOW</button>
@@ -66,7 +76,7 @@ declare(strict_types=1);
                 <h2 class="name">Haircut & Beard</h2>
                 <br>
                 <br>
-                <h3>Barber: 500-900</h3>
+                <h3>Barber: 800-900</h3>
                 <a href="http://localhost:8000/booking">
                     <button class="book-now" id="haircut&beard">BOOK NOW</button>
                 </a>
@@ -81,7 +91,7 @@ declare(strict_types=1);
                 <h2 class="name">Haircut</h2>
                 <h2 class="name">Long Hair</h2>
                 <br>
-                <h3>Barber: 400-650</h3>
+                <h3>Barber: 600-650</h3>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now" id="haircut&long">BOOK NOW</button>
@@ -97,7 +107,7 @@ declare(strict_types=1);
                 <h2 class="name">Long Hair &</h2>
                 <h2 class="name">Beard</h2>
                 <br>
-                <h3>Barber: 550-950</h3>
+                <h3>Barber: 900-950</h3>
 
                 <a href="http://localhost:8000/booking">
                     <button class="book-now" id="long&beard">BOOK NOW</button>
@@ -112,10 +122,10 @@ declare(strict_types=1);
             <div class="info-container" id="father-son">
                 <h2 class="name">Father & Son</h2>
                 <br>
-                <h3>Barber: 650-1000</h3>
+                <h3>Barber: 900-1000</h3>
 
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="father&son">BOOK NOW</button>
+                <a href="http://localhost:8000/booking" class="book-now" id="father&son">
+                    BOOK NOW
                 </a>
             </div>
 
@@ -127,3 +137,5 @@ declare(strict_types=1);
 <?php require __DIR__ . '/_footer.php' ?>
 
 </body>
+
+</html>

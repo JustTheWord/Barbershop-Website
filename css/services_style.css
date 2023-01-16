@@ -155,7 +155,10 @@
 }
 
 
-button {
+.book-now {
+    width: 25%;
+    color: black;
+    text-align: center;
     font-family: Avenir;
 
     display:block;
@@ -173,14 +176,14 @@ button {
 }
 
 
-#long-hair button {
+#long-hair .book-now {
     display: block;
     margin-left: auto;
     margin-right: 0;
 }
 
 
-button:hover, button:focus, button:active {
+.book-now:hover, .book-now:focus, .book-now:active {
     box-shadow: 0 0 3px 4px rgb(200, 100, 0);
     text-shadow: 0 0 3px white;
     background: black;
@@ -308,11 +311,11 @@ button:hover, button:focus, button:active {
         background-image: none;
     }
 
-    button {
+    .book-now {
         margin: 0 auto;
     }
 
-    #long-hair button {
+    #long-hair .book-now {
         margin: 0 auto;
     }
 }

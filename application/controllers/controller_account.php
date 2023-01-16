@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 require_once 'controller_authentication.php';
 
 class Controller_Account extends Controller_Authentication
@@ -7,8 +9,17 @@ class Controller_Account extends Controller_Authentication
     {
         if (!empty($_SESSION["email"]))
         {
-            $_SESSION['visitHistory'] = array_reverse($this->model->getClientsVisitHistory($_SESSION["email"]));
-            include(__DIR__ . "/../views/account_view.php");
+            $clientsData = $this->model->getClientsVisitHistory($_SESSION["email"]);
+            if (is_array($clientsData))
+            {
+                $_SESSION['visitHistory'] = array_reverse($clientsData);
+                include(__DIR__ . "/../views/account_view.php");
+            }
+            else
+            {
+                echo "The problem with database connection.";
+                die();
+            }
         }
 
         else
