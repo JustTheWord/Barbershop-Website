@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 // including core files
 require_once 'core/model.php';

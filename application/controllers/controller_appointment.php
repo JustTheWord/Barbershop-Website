@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 require_once 'controller_authentication.php';
 
@@ -41,7 +42,7 @@ class Controller_Appointment extends Controller_Authentication
                     $appointDate, $email, $name, $barber, $service, $price
                 ));
 
-                $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+                $host = 'https://'.$_SERVER['HTTP_HOST'].'/~grebegor/';
 
                 if (!empty($_SESSION['userId']))
                 {

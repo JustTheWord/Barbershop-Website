@@ -8,13 +8,12 @@ declare(strict_types=1);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
 
 <body class="sign-in-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/signin_style.css">
+<link rel="stylesheet" href="css/signin_style.css">
 
 <div class="sign-in-container">
 
@@ -50,13 +49,13 @@ declare(strict_types=1);
         <br>
         <div class="sign-up-link">
             <span>Don't have an account?</span>
-            <a href = "http://localhost:8000/signup">Sign up here</a>
+            <a href = "https://wa.toad.cz/~grebegor/signup">Sign up here</a>
         </div>
     </form>
 
 </div>
 
-<script src="/js/controlSignInForm.js"></script>
+<script src="js/controlSignInForm.js"></script>
 
 <?php require __DIR__ . '/_footer.php' ?>
 </body>

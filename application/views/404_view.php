@@ -8,12 +8,11 @@ declare(strict_types=1);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
 
-<link rel="stylesheet" href="../../css/error_style.css">
-
 <body class="error-body">
+
+<link rel="stylesheet" href="css/error_style.css">
 
 <div class="glitch-wrapper">
     <div class="glitch-text">
@@ -21,7 +20,7 @@ declare(strict_types=1);
     </div>
 </div>
 
-<button type="button" onclick="location.href='http://localhost:8000'">
+<button type="button" onclick="location.href='https://wa.toad.cz/~grebegor/'">
     Back to the site
 </button>
 

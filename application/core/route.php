@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 class Route
 {
     static function start()
@@ -10,28 +10,33 @@ class Route
         $action_name = 'index';
 
         $routes = explode('/', $_SERVER['REQUEST_URI']);
-        // gets controller name
-        if (!empty($routes[1])) {
 
-            if (strpos($routes[1], '?page=') !== false)
+        // gets controller name
+        if (!empty($routes[2]) )
+	{
+            if (strpos($routes[2], '?page=') !== false)
             {
-                $routeWithGetParam = explode('?page=', $routes[1]);
+                $routeWithGetParam = explode('?page=', $routes[2]);
                 $controller_name = $routeWithGetParam[0];
-                $pageNumber = $routeWithGetParam[1];
-                // only allowed get param for pagination pages
-                if (preg_match("/^[0-9]*$/", $pageNumber)) {
+		$pageNumber = $routeWithGetParam[1];
+
+                // check if GET page value is number
+		if (preg_match("/^[0-9]*$/", $pageNumber))
+	       	{
                     $_SESSION['page'] = $pageNumber;
                 }
-            } else {
-                $controller_name = $routes[1];
-            }
+	    }
 
+	    else
+	    {
+                $controller_name = $routes[2];
+            }
         }
 
         // action name
-        if ( !empty($routes[2]) )
-        {
-            $action_name = $routes[2];
+        if ( !empty($routes[3]) )
+	{
+                $action_name = $routes[3];
         }
 
         // adding prefixes
@@ -78,7 +83,7 @@ class Route
 
     function ErrorPage404()
     {
-        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+        $host = 'https://'.$_SERVER['HTTP_HOST'].'/~grebegor/';
         header('HTTP/1.1 404 Not Found');
         header("Status: 404 Not Found");
         header('Location:'.$host.'404');

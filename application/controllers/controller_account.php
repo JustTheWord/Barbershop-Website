@@ -24,7 +24,7 @@ class Controller_Account extends Controller_Authentication
 
         else
         {
-            $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+            $host = 'https://'.$_SERVER['HTTP_HOST'].'/~grebegor/';
             header('HTTP/1.1 404 Not Found');
             header("Status: 404 Not Found");
             header('Location:'.$host.'404');

@@ -10,7 +10,7 @@ declare(strict_types=1);
             <div class="header-body">
 
                 <a href="#" class="header-logo">
-                    <img src="/images/logo.png" alt="logo">
+                    <img src="images/logo.png" alt="logo">
                 </a>
 
                 <div class="header-container">
@@ -20,22 +20,22 @@ declare(strict_types=1);
                     <nav class="header-menu">
                         <ul class="header-list" >
 
-                            <li ><a class="home" href = "http://localhost:8000" >
+                            <li ><a class="home" href = "https://wa.toad.cz/~grebegor/" >
                                     <span > Home</span >
                                 </a>
                             </li >
 
-                            <li ><a class="services" href = "http://localhost:8000/services" >
+                            <li ><a class="services" href = "https://wa.toad.cz/~grebegor/services" >
                                     <span > Services</span >
                                 </a >
                             </li >
 
-                            <li ><a class="team" href = "http://localhost:8000/team" >
+                            <li ><a class="team" href = "https://wa.toad.cz/~grebegor/team" >
                                     <span > Team</span >
                                 </a >
                             </li >
 
-                            <li ><a class="contacts" href = "http://localhost:8000/contacts" >
+                            <li ><a class="contacts" href = "https://wa.toad.cz/~grebegor/contacts" >
                                     <span > Contacts</span >
                                 </a >
                             </li >
@@ -44,14 +44,14 @@ declare(strict_types=1);
                                     <?php
                                     if (isset($_SESSION['userId']) && !empty($_SESSION['userId'])) {
                                         ?>
-                                        <a class="sign-in" href = "http://localhost:8000/account">
+                                        <a class="sign-in" href = "https://wa.toad.cz/~grebegor/account">
                                         <span>Account</span>
                                         </a >
                                         <?php
                                     }
                                     else {
                                         ?>
-                                        <a class="sign-in" href = "http://localhost:8000/signin">
+                                        <a class="sign-in" href = "https://wa.toad.cz/~grebegor/signin">
                                         <span >Sign In</span >
                                         </a >
                                         <?php
@@ -63,13 +63,14 @@ declare(strict_types=1);
                             if (isset($_SESSION['userId']) && !empty($_SESSION['userId'])) {
                                 ?>
                                 <li>
-                                    <a class="sign-out" href = "http://localhost:8000/signout" >
+                                    <a class="sign-out" href = "https://wa.toad.cz/~grebegor/signout" >
                                         <span>Sign out</span >
                                     </a>
                                 </li >
                                 <?php
                             }
                             ?>
+
                         </ul >
                     </nav >
                 </div>

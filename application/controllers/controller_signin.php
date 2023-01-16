@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 class Controller_SignIn extends Controller
 {
 

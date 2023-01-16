@@ -2,21 +2,18 @@
  declare(strict_types=1);
  ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
-
 
 <body class="main-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/home_style.css">
+<link rel="stylesheet" href="css/home_style.css">
 
 <div class="home-container">
 
@@ -24,7 +21,7 @@
         <div class="mobile-intro">
             <span id="greeting">Welcome to</span>
             <span id="barbershop-name">
-                <script src="../../js/typeWriter.js"></script>
+                <script src="js/typeWriter.js"></script>
                 <noscript>Barbershop Farian</noscript>
             </span>
         </div>
@@ -41,9 +38,9 @@
         </div>
 
         <div class="right-side">
-            <img id="haircut-image" src="/images/haircut.png" alt="reservation-back">
+            <img id="haircut-image" src="images/haircut.png" alt="reservation-back">
 
-            <a class="reservation-btn" href="http://localhost:8000/booking">
+            <a class="reservation-btn" href="https://wa.toad.cz/~grebegor/booking">
                 <span>Book Now</span>
             </a>
         </div>
@@ -57,31 +54,29 @@
 
             <div class="pattern-services-container">
                 <div class="pattern-services">
-                    <img  class="coffee-1" src="/images/Patterns/coffee_1.png">
-                    <label for="coffee-1">Free coffee</label>
+		    <img  id="coffee-1" src="images/Patterns/coffee_1.png" alt="coffee">
+		    <span>Free coffee</span>
                 </div>
 
                 <div class="pattern-services">
-                    <img id="playstation" src="/images/Patterns/controller_1.png">
-                    <label for="playstation">Free Playstation gaming</label>
+                    <img id="playstation" src="images/Patterns/controller_1.png" alt="playstation">
+		    <span >Free Playstation gaming</span>
                 </div>
 
                 <div class="pattern-services">
-                    <img id="gift-box" src="/images/Patterns/gift-box_1.png">
-                    <label for="gift-box">100 Kč discount for your first haircut</label>
+                    <img id="gift-box" src="images/Patterns/gift-box_1.png" alt="gift-box">
+                    <span>100 Kč discount for your first haircut</span>
                 </div>
 
                 <div class="pattern-services">
-                    <img id="beer" src="/images/Patterns/beer_1.png">
-                    <label for="beer">Free beer</label>
+                    <img id="beer" src="images/Patterns/beer_1.png" alt="beer">
+                    <span>Free beer</span>
                 </div>
             </div>
         </div>
 
         <div class="video-container">
-            <iframe  src="https://www.youtube.com/embed/hg0yW9QkZ8g"
-                    allowfullscreen>
-            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hg0yW9QkZ8g"></iframe>
         </div>
 
 
@@ -90,7 +85,7 @@
     <div class="founder-container">
 
         <div class="founder-image-container">
-            <img src="/images/farkhad_black.png">
+            <img src="images/farkhad_black.png" alt="farkhad-image">
         </div>
 
         <div class="founder-intro">
@@ -115,8 +110,9 @@
             </p>
             <p>MOTTO: "PERFECTION HAS NO BOUNDARIES"</p>
 
-    </div>
+       </div>
 
+   </div>
 </div>
 
 <?php require __DIR__ . '/_footer.php' ?>

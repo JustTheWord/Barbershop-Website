@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 require_once 'controller_authentication.php';
 class Controller_Register extends Controller_Authentication
 {

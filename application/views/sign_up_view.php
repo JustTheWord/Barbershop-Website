@@ -8,13 +8,12 @@ declare(strict_types=1);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
 
 <body class="sign-in-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/signup_style.css">
+<link rel="stylesheet" href="css/signup_style.css">
 
 <div class="sign-up-container">
 
@@ -95,7 +94,7 @@ declare(strict_types=1);
     </form>
 </div>
 
-<script src="/js/controlSignUpForm.js"></script>
+<script src="js/controlSignUpForm.js"></script>
 
 <?php require __DIR__ . '/_footer.php' ?>
 </body>

@@ -8,13 +8,12 @@ declare(strict_types=1);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
 
 <body class="book-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/booking_style.css">
+<link rel="stylesheet" href="css/booking_style.css">
 
 <div class="booking-container">
 
@@ -113,7 +112,7 @@ declare(strict_types=1);
     </form>
 </div>
 
-<script src="/js/bookNowService.js"></script>
+<script src="js/bookNowService.js"></script>
 <?php require __DIR__ . '/_footer.php' ?>
 </body>
 

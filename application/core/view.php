@@ -1,31 +1,19 @@
 <?php
-
+declare(strict_types=1);
 class View
 {
 
-    //public $template_view; // здесь можно указать общий вид по умолчанию.
-
-    /*
-    $content_file - виды отображающие контент страниц;
-    $template_file - общий для всех страниц шаблон;
-    $data - массив, содержащий элементы контента страницы. Обычно заполняется в модели.
-    */
     function generate($content_view, $template_view, $data = null)
     {
-
-//        $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-//        header('Location:'.$host.'account');
-
 
         if (is_array($data))
         {
             extract($data);
         }
 
-        /*
-        динамически подключаем общий шаблон (вид),
-        внутри которого будет встраиваться вид
-        для отображения контента конкретной страницы.
+	/*
+	Dynamically include the general pattern (view) inside
+	which will inserted content of the certnain page
         */
         include 'application/views/'.$template_view;
     }

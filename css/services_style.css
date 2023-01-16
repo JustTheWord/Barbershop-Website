@@ -114,22 +114,22 @@
 
 
 #haircut {
-    background-image: url("/images/services/haircut_picture_background_755_355.png");
+    background-image: url("../images/services/haircut_picture_background_755_355.png");
     background-position-x: left;
 }
 
 #haircut-shave {
-    background-image: url("/images/services/hair_shave_picture_background_755_355.png");
+    background-image: url("../images/services/hair_shave_picture_background_755_355.png");
     background-position-x: left;
 }
 
 #haircut-beard {
-    background-image: url("/images/services/shave_beard_picture_background_750-355.png");
+    background-image: url("../images/services/shave_beard_picture_background_750-355.png");
     background-position-x: left;
 }
 
 #long-hair {
-    background-image: url("/images/services/long_hair_picture_background_750_355.png");
+    background-image: url("../images/services/long_hair_picture_background_750_355.png");
     background-position-x: center;
 
     position: relative;
@@ -137,12 +137,12 @@
 }
 
 #long-hair-beard {
-    background-image: url("/images/services/long_hair_beard_picture_background_750_355.png");
+    background-image: url("../images/services/long_hair_beard_picture_background_750_355.png");
     background-position-x: left;
 }
 
 #father-son {
-    background-image: url("/images/services/kid_cut_resized_coloured_pattern_750_355.png");
+    background-image: url("../images/services/kid_cut_resized_coloured_pattern_750_355.png");
     background-position-x: left;
 }
 
@@ -156,6 +156,7 @@
 
 
 .book-now {
+
     width: 25%;
     color: black;
     text-align: center;
@@ -174,7 +175,6 @@
     font-size: 1.2rem;
     transition: 200ms;
 }
-
 
 #long-hair .book-now {
     display: block;

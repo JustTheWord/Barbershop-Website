@@ -24,7 +24,7 @@ class Controller_Authentication extends Controller
     public function successfulSignIn(?array $clientsData) {
 
         if ($clientsData)
-        {
+	{
             session_regenerate_id(true);
             setcookie(session_name(), session_id(), time() + (60 * 60 * 24));
 
@@ -32,8 +32,8 @@ class Controller_Authentication extends Controller
             $_SESSION['email'] = $clientsData['email'];
             $_SESSION['name'] = $clientsData['name'];
             $_SESSION['phone'] = $clientsData['phone_num'];
-
-            $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+			    
+	    $host = 'https://'.$_SERVER['HTTP_HOST'].'/~grebegor/';
             header('Location:'.$host.'account');
         }
     }

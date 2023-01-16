@@ -2,21 +2,18 @@
 declare(strict_types=1);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
-
 
 <body class="services-body">
 
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/services_style.css">
+<link rel="stylesheet" href="css/services_style.css">
 
 <div class="services-container">
 
@@ -46,9 +43,7 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 550-600</h3>
 
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="haircut&fade">BOOK NOW</button>
-                </a>
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="haircut&fade">BOOK NOW</a>
             </div>
 
         </div>
@@ -62,9 +57,7 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 800-900</h3>
 
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="haircut&shave">BOOK NOW</button>
-                </a>
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="haircut&shave">BOOK NOW</a>
             </div>
 
         </div>
@@ -77,9 +70,8 @@ declare(strict_types=1);
                 <br>
                 <br>
                 <h3>Barber: 800-900</h3>
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="haircut&beard">BOOK NOW</button>
-                </a>
+
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="haircut&beard">BOOK NOW</a>
             </div>
 
         </div>
@@ -93,9 +85,7 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 600-650</h3>
 
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="haircut&long">BOOK NOW</button>
-                </a>
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="haircut&long">BOOK NOW</a>
             </div>
 
         </div>
@@ -109,9 +99,7 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 900-950</h3>
 
-                <a href="http://localhost:8000/booking">
-                    <button class="book-now" id="long&beard">BOOK NOW</button>
-                </a>
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="long&beard">BOOK NOW</a>
             </div>
 
         </div>
@@ -124,18 +112,18 @@ declare(strict_types=1);
                 <br>
                 <h3>Barber: 900-1000</h3>
 
-                <a href="http://localhost:8000/booking" class="book-now" id="father&son">
-                    BOOK NOW
-                </a>
+                <a href="https://wa.toad.cz/~grebegor/booking" class="book-now" id="father&son">BOOK NOW</a>
             </div>
 
-        </div>
+	</div>
 
+     </div>
+</div>
 
-<script src="/js/services.js"></script>
+<script src="js/services.js"></script>
 
 <?php require __DIR__ . '/_footer.php' ?>
 
-</body>
-
+</body
+>
 </html>

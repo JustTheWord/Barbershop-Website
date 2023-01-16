@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 class Controller_SignOut extends Controller
 {
@@ -17,11 +18,11 @@ class Controller_SignOut extends Controller
             // Destroy the session
             session_destroy();
             // Redirect the user to the login page
-            header("Location: http://".$_SERVER['HTTP_HOST'].'/'."signin");
+            header("Location: https://".$_SERVER['HTTP_HOST']."/~grebegor/signin");
         }
         else
         {
-            $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+            $host = 'https://'.$_SERVER['HTTP_HOST'].'/~grebegor/';
             header('HTTP/1.1 404 Not Found');
             header("Status: 404 Not Found");
             header('Location:'.$host.'404');

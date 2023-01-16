@@ -2,21 +2,17 @@
 declare(strict_types=1);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Barbershop</title>
-    <!--    <link rel="stylesheet" href="/css/body_header_footer_style.css">-->
 </head>
-
-
 
 <body class="contacts-body">
 <?php require __DIR__ . '/_header.php' ?>
-<link rel="stylesheet" href="../../css/contacts_style.css">
+<link rel="stylesheet" href="css/contacts_style.css">
 
 
 <div class="contacts-container">
@@ -47,11 +43,11 @@ declare(strict_types=1);
         </div>
 
         <a href = "https://www.facebook.com/barbershopfarian/" >
-            <img id="facebook-icon" src="/images/facebook-30.png" alt="facebook">
+            <img id="facebook-icon" src="images/facebook-30.png" alt="facebook">
         </a >
 
         <a href = "https://www.instagram.com/farian.barbershop/" >
-            <img id="instagram-icon" src="/images/instagram-30.png" alt="instagram">
+            <img id="instagram-icon" src="images/instagram-30.png" alt="instagram">
         </a >
 
 

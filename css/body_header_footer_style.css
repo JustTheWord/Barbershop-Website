@@ -93,6 +93,8 @@ a:hover {
     transition:200ms;
 }
 
+
+
 body.main-body .header-list li a.home {
     color: white;
     font-size: 100%;
@@ -219,6 +221,8 @@ footer p {
         background-color: black;
         border-bottom: 1px solid rgb(240, 130, 0);
         z-index: 10;
+        /*gap: 1rem;*/
+        /*padding-bottom: 1rem;*/
         width: 100%;
     }
 
@@ -230,6 +234,8 @@ footer p {
         align-content: center;
         flex-flow: column wrap;
         font-size: 30px;
+        /*justify-content: space-around;*/
+        /*align-items: center;*/
     }
 
 
@@ -237,6 +243,7 @@ footer p {
         margin-right: 0;
         padding: 0 0 20px 0;
     }
+
 
     .header-menu li a.sign-in {
         padding: 0 0 0 0;
@@ -282,6 +289,10 @@ footer p {
     .header-list li {
         padding: 0 0 15px 0;
     }
+    
+    footer {
+        margin-top: 100px;
+    }
 }
 
 
@@ -296,8 +307,8 @@ footer p {
     }
 
     .header-logo img {
-        width: 35%;
-        padding: 15px 0 0 10px;
+        width: 30%;
+        padding: 10px 0 0 10px;
 
     }
 
@@ -306,3 +317,4 @@ footer p {
     }
 
 }
+
