@@ -40,21 +40,41 @@ serviceField.addEventListener('change', function () { globalChangePrice(); });
 // delete Email form error after click on the field
 const emailBookField = document.getElementById('email-booking');
 const emailFormError = document.getElementById('form-email-error');
-emailBookField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+if (emailFormError) {
+    emailBookField.addEventListener("click", function () { emailFormError.style.display = 'none'; })
+}
 
 // delete Password form error after click on the field
 const nameBookField = document.getElementById('name-booking');
 const nameFormError = document.getElementById('form-pass-error');
-nameBookField.addEventListener("click", function () { nameFormError.style.display = 'none'; })
+if (nameFormError) {
+    nameBookField.addEventListener("click", function () { nameFormError.style.display = 'none'; })
+}
 
 const phoneBookField = document.getElementById('phone-booking');
 const phoneFormError = document.getElementById('form-phone-error');
-phoneBookField.addEventListener("click", function () { phoneFormError.style.display = 'none'; })
+if (phoneFormError) {
+    phoneBookField.addEventListener("click", function () { phoneFormError.style.display = 'none'; })
+}
+
+const serviceBookField = document.getElementById('service');
+const barberBookField = document.getElementById('barber');
+const serviceBarberFormError = document.getElementById('form-barber-service-error');
+
+if (serviceBarberFormError) {
+    serviceBookField.addEventListener("click", function () { serviceBarberFormError.style.display = 'none'; })
+    barberBookField.addEventListener("click", function () { serviceBarberFormError.style.display = 'none'; })
+}
 
 const dateBookField = document.getElementById('date-book');
 const dateFormError = document.getElementById('form-phone-error');
-dateBookField.addEventListener("click", function () { dateFormError.style.display = 'none'; })
+if (dateFormError) {
+    dateBookField.addEventListener("click", function () { dateFormError.style.display = 'none'; })
+
+}
 
 const timeBookField = document.getElementById('time-book');
 const timeFormError = document.getElementById('form-time-error');
-timeBookField.addEventListener("click", function () { timeFormError.style.display = 'none'; })
+if (timeFormError) {
+    timeBookField.addEventListener("click", function () { timeFormError.style.display = 'none'; })
+}
