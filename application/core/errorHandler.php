@@ -17,7 +17,7 @@ class ErrorHandler
             'dateValue' => '',
             'timeError' => '',
             'repeatPassError' => '',
-            '$barberServiceError'=>'');
+            'barberServiceError'=>'');
     }
 
     public function controlForm($allPostVariables)
@@ -141,7 +141,7 @@ class ErrorHandler
                     // Null if there's no such a barber or such a service. Protection from the wrong form fields
                     if (!$price) {
                         $noErrors = false;
-                        $this->formErrors['$barberServiceError'] = "Sorry, there's no such a barber or such a service.";
+                        $this->formErrors['barberServiceError'] = "Sorry, there's no such a barber or such a service.";
                     }
 
                     break;
