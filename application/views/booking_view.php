@@ -62,7 +62,15 @@ declare(strict_types=1);
                if(isset($_SESSION['phone']) && !empty($_SESSION['phone']))
                    echo $_SESSION['phone'];
                elseif (isset($phoneValue))
-                   echo "$phoneValue";?>"  required>
+                   echo "$phoneValue";?>" required>
+
+        <?php
+        if (isset($barberServiceError) && !empty($barberServiceError)) {
+            ?>
+            <h1 id="form-barber-service-error"><?= $barberServiceError ?></h1>
+            <?php
+        }
+        ?>
 
         <label for="service">Service:</label>
         <select id="service" name="service" required>

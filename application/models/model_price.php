@@ -34,7 +34,8 @@ class Model_Price extends Model
         $barberName = $data['barberName'];
         $serviceName = $data['serviceName'];
 
-        if ($barberName && $serviceName)
+        if (key_exists($barberName, $this->prices) &&
+            key_exists($serviceName, $this->prices[$barberName]))
         {
             return $this->prices[$barberName][$serviceName];
         }

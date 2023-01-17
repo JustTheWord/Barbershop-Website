@@ -16,7 +16,8 @@ class ErrorHandler
             'dateError' => '',
             'dateValue' => '',
             'timeError' => '',
-            'repeatPassError' => '');
+            'repeatPassError' => '',
+            '$barberServiceError'=>'');
     }
 
     public function controlForm($allPostVariables)
@@ -133,6 +134,16 @@ class ErrorHandler
                         $noErrors = false;
                         $this->formErrors['nameError'] = "Name and Surname may contain only letters and white space";
                     }
+                    break;
+
+                case 'serviceBarber':
+                    $price = $val;
+                    // Null if there's no such a barber or such a service. Protection from the wrong form fields
+                    if (!$price) {
+                        $noErrors = false;
+                        $this->formErrors['$barberServiceError'] = "Sorry, there's no such a barber or such a service.";
+                    }
+
                     break;
             }
         }

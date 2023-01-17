@@ -23,12 +23,17 @@ class Controller_Appointment extends Controller_Authentication
             $time = $_POST["time"];
             $service = $_POST["service"];
             $barber = $_POST["barber"];
-
-            $feedback = $this->authError->controlForm(array(
-                'name'=> $name, 'email'=>$email, 'phone '=>$phone, 'date'=>$date, 'time'=>$time)
+            // Get the price according to the selected barber and the selected service
+            $price = $this->modelPrices->get_data(array(
+                    'barberName'=>$barber, 'serviceName' => $service)
             );
 
-            if ($feedback) // if any error in the sign-in form
+            $feedback = $this->authError->controlForm(array('name'=> $name, 'email'=>$email,
+                    'phone'=>$phone, 'date'=>$date, 'time'=>$time,
+                    'serviceBarber'=>$price)
+            );
+
+            if ($feedback) // if any error in the form
             {
                 $this->view->generate('', 'booking_view.php', $feedback);
             }
@@ -36,8 +41,6 @@ class Controller_Appointment extends Controller_Authentication
             else
             {
                 $appointDate = $date . " " . $time . ":00";
-                $price = $this->modelPrices->get_data(array('barberName'=>$barber, 'serviceName' => $service));
-
                 $this->model->addNewAppointment(array(
                     $appointDate, $email, $name, $barber, $service, $price
                 ));

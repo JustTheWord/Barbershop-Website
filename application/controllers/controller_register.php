@@ -26,7 +26,7 @@ class Controller_Register extends Controller_Authentication
                 'date' => $date, 'password' => $password, 'passwordsConfirm' => $passwordsTheSame)
             );
 
-            if ($feedback) // if any error in the sign-in form
+            if ($feedback) // if any error in the sign-up form
             {
                 $this->view->generate('', 'sign_up_view.php', $feedback);
             }
