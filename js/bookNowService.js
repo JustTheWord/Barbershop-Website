@@ -46,7 +46,7 @@ if (emailFormError) {
 
 // delete Password form error after click on the field
 const nameBookField = document.getElementById('name-booking');
-const nameFormError = document.getElementById('form-pass-error');
+const nameFormError = document.getElementById('form-name-error');
 if (nameFormError) {
     nameBookField.addEventListener("click", function () { nameFormError.style.display = 'none'; })
 }
