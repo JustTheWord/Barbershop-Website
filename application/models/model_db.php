@@ -33,16 +33,6 @@ class Model_DB extends Model
         }
     }
 
-    public function getAllClients(): ?array
-    {
-        if ($this->pdo)
-        {
-            return $this->pdo->query("SELECT * FROM Clients")->fetchAll();
-        }
-
-        return null;
-    }
-
     public function getClientsData($clientsEmail): ?array
     {
         if ($this->pdo)
